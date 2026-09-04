@@ -1552,3 +1552,119 @@ function getCategories() {
     )
   ].sort();
 }
+const SOURCE_DOCUMENTS = [
+  {
+    id: "SOURCE-1",
+    title: "RTE Act, 2009 (updated 26-07-2021)",
+    description: "Principal Act",
+    date: "Updated 26-07-2021",
+    pages: 17,
+    file: "01_RTE_Act_2009_Updated_26-07-2021.pdf"
+  },
+  {
+    id: "SOURCE-2",
+    title: "Model Rules under the RTE Act, 2009",
+    description: "Model Rules",
+    date: "",
+    pages: 22,
+    file: "02_Model_Rules_RTE_2009.pdf"
+  },
+  {
+    id: "SOURCE-3",
+    title: "Guidelines under Section 35(1) regarding Section 23(2)",
+    description: "Teacher qualification / relaxation",
+    date: "8 Nov 2010",
+    pages: 5,
+    file: "03_Guidelines_Section_23_2_08-11-2010.pdf"
+  },
+  {
+    id: "SOURCE-4",
+    title: "Guidelines under Section 35(1) on admission, Section 13(1) and Section 12(1)(c)",
+    description: "Admission / screening / 25%",
+    date: "23 Nov 2010",
+    pages: 2,
+    file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf"
+  },
+  {
+    id: "SOURCE-5",
+    title: "Gazette notifications on teacher-qualification relaxation",
+    description: "West Bengal and Bihar relaxation",
+    date: "10 Jun 2011",
+    pages: 5,
+    file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf"
+  },
+  {
+    id: "SOURCE-6",
+    title: "Guidance on Section 12(1)(c) for Kendriya Vidyalaya Sangathan",
+    description: "KVS neighbourhood",
+    date: "2 Feb 2011",
+    pages: 1,
+    file: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf"
+  },
+  {
+    id: "SOURCE-7",
+    title: "Advisory on Section 29",
+    description: "Curriculum / evaluation",
+    date: "31 Jan 2012",
+    pages: 4,
+    file: "07_Advisory_Section_29_31-01-2012.pdf"
+  },
+  {
+    id: "SOURCE-8",
+    title: "Advisory on Sections 31 and 32",
+    description: "Child-rights monitoring / grievances",
+    date: "14 Feb 2012",
+    pages: 4,
+    file: "08_Advisory_Sections_31_32_14-02-2012.pdf"
+  },
+  {
+    id: "SOURCE-9",
+    title: "Guidelines under Section 35(1) for Residential Schools",
+    description: "Residential schools",
+    date: "13 Jul 2012",
+    pages: 1,
+    file: "09_Guidelines_Residential_Schools_13-07-2012.pdf"
+  },
+  {
+    id: "SOURCE-10",
+    title: "Clarification on RTE applicability to minority educational institutions",
+    description: "Minority institutions",
+    date: "27 Aug 2014",
+    pages: 1,
+    file: "10_Clarification_Minority_Institutions_27-08-2014.pdf"
+  },
+  {
+    id: "SOURCE-11",
+    title: "RTE (Amendment) Rules, 2015, G.S.R. 755(E)",
+    description: "Teacher grievance mechanism",
+    date: "2015",
+    pages: 4,
+    file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf"
+  },
+  {
+    id: "SOURCE-12",
+    title: "RTE (Amendment) Rules, 2024, G.S.R. 777(E)",
+    description: "Examination / holding back",
+    date: "2024",
+    pages: 3,
+    file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf"
+  },
+
+  {
+    id: "EXTRA-1",
+    title: "THE RIGHT OF CHILDREN TO FREE AND COMPULSORY EDUCATION ACT, 2009 - Clarification on Provisions",
+    description: "Age-appropriate admission / special training clarification",
+    date: "2009",
+    pages: 17,
+    file: "13_RTE_Act_Clarification_on_Provisions.pdf"
+  },
+
+  {
+    id: "REFERENCE-BOOK",
+    title: "RTE Rules Reference Book",
+    description: "Searchable, topic-indexed, source-linked compilation",
+    date: "September 2026",
+    pages: 0,
+    file: "00_RTE_Rules_Reference_Book_September_2026.pdf"
+  }
+];
