@@ -1,134 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RTE 2009 Rules Book</title>
+<title>RTE 2009 Rules Book</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<style>
+    * {
+        box-sizing: border-box;
+    }
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7fa;
-            color: #202124;
-            line-height: 1.6;
-        }
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fb;
+        color: #172033;
+    }
 
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #ddd;
-            padding: 24px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    header {
+        background: #182848;
+        color: white;
+        padding: 28px 20px;
+    }
 
-        .header-inner {
-            max-width: 1000px;
-            margin: auto;
-        }
+    .header-inner {
+        max-width: 1100px;
+        margin: auto;
+    }
 
+    h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+    }
+
+    .subtitle {
+        margin: 0;
+        opacity: 0.85;
+        font-size: 15px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 25px auto;
+        padding: 0 16px;
+    }
+
+    .search-box {
+        background: white;
+        padding: 18px;
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        margin-bottom: 20px;
+    }
+
+    #searchInput {
+        width: 100%;
+        padding: 15px 17px;
+        font-size: 16px;
+        border: 1px solid #ccd3df;
+        border-radius: 9px;
+        outline: none;
+    }
+
+    #searchInput:focus {
+        border-color: #3857d6;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .filter-btn {
+        border: 1px solid #ccd3df;
+        background: white;
+        padding: 8px 13px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    .filter-btn.active {
+        background: #182848;
+        color: white;
+        border-color: #182848;
+    }
+
+    .result-info {
+        margin: 15px 2px;
+        color: #657083;
+        font-size: 14px;
+    }
+
+    .rule-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        box-shadow: 0 2px 9px rgba(0,0,0,0.07);
+        border-left: 4px solid #3857d6;
+    }
+
+    .category {
+        display: inline-block;
+        background: #eef1ff;
+        color: #3046aa;
+        padding: 5px 9px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .rule-card h2 {
+        margin: 3px 0 9px;
+        font-size: 20px;
+    }
+
+    .rule-card p {
+        line-height: 1.6;
+        margin: 7px 0;
+        color: #424b5a;
+    }
+
+    .source {
+        margin-top: 14px;
+        padding-top: 13px;
+        border-top: 1px solid #edf0f5;
+        font-size: 13px;
+        color: #667085;
+    }
+
+    .source strong {
+        color: #273043;
+    }
+
+    .source-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 9px 14px;
+        background: #182848;
+        color: white;
+        text-decoration: none;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .source-btn:hover {
+        background: #2b4275;
+    }
+
+    .no-results {
+        background: white;
+        padding: 35px;
+        text-align: center;
+        border-radius: 12px;
+        color: #687386;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 15px;
+        color: #7b8494;
+        font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
         h1 {
-            margin: 0 0 6px;
-            font-size: 28px;
-        }
-
-        .subtitle {
-            margin: 0;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .search-box {
-            margin-bottom: 30px;
-        }
-
-        #search {
-            width: 100%;
-            padding: 15px 18px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            font-size: 16px;
-            outline: none;
-        }
-
-        #search:focus {
-            border-color: #555;
+            font-size: 24px;
         }
 
         .rule-card {
-            background: white;
-            border: 1px solid #e1e4e8;
-            border-radius: 12px;
-            padding: 22px;
-            margin-bottom: 18px;
+            padding: 16px;
         }
 
         .rule-card h2 {
-            margin-top: 0;
-            font-size: 20px;
+            font-size: 18px;
         }
-
-        .rule-card p {
-            margin-bottom: 10px;
-        }
-
-        .source {
-            margin-top: 18px;
-            padding-top: 14px;
-            border-top: 1px solid #eee;
-            font-size: 14px;
-        }
-
-        .source a {
-            color: #0645ad;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .source a:hover {
-            text-decoration: underline;
-        }
-
-        .no-result {
-            display: none;
-            text-align: center;
-            padding: 30px;
-            color: #777;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: #777;
-            font-size: 13px;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 23px;
-            }
-
-            .container {
-                margin-top: 20px;
-            }
-
-            .rule-card {
-                padding: 18px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
@@ -137,152 +191,521 @@
     <div class="header-inner">
         <h1>RTE 2009 Rules Book</h1>
         <p class="subtitle">
-            Admission rules, age requirements and original source references
+            Searchable, source-linked reference to the supplied RTE Act, Rules,
+            Guidelines and Notifications
         </p>
     </div>
 </header>
 
-<main class="container">
+<div class="container">
 
     <div class="search-box">
+
         <input
-            type="text"
-            id="search"
-            placeholder="Search rules..."
-            onkeyup="searchRules()"
+            type="search"
+            id="searchInput"
+            placeholder="Search rules, sections, admission, age proof, 25%, screening..."
+            autocomplete="off"
         >
+
+        <div class="filters" id="filters"></div>
+
     </div>
 
+    <div class="result-info" id="resultInfo"></div>
 
-    <!-- RULE 1 -->
+    <div id="results"></div>
 
-    <section class="rule-card">
-
-        <h2>1. Right to Education Act, 2009</h2>
-
-        <p>
-            The Right of Children to Free and Compulsory Education Act,
-            2009 provides the legal framework for free and compulsory
-            education for children within the prescribed age group.
-        </p>
-
-        <div class="source">
-            <strong>Original Source:</strong><br>
-
-            <a href="#" onclick="openPDF('rte-2009.pdf', 1)">
-                View Original Document → Page 1
-            </a>
-        </div>
-
-    </section>
-
-
-    <!-- RULE 2 -->
-
-    <section class="rule-card">
-
-        <h2>2. Admission Age Requirement</h2>
-
-        <p>
-            The applicable admission age should be determined according
-            to the relevant rule, notification or government order
-            applicable to the particular admission process.
-        </p>
-
-        <div class="source">
-            <strong>Original Source:</strong><br>
-
-            <a href="#" onclick="openPDF('rte-2009.pdf', 5)">
-                View Original Document → Page 5
-            </a>
-        </div>
-
-    </section>
-
-
-    <!-- RULE 3 -->
-
-    <section class="rule-card">
-
-        <h2>3. Important Note</h2>
-
-        <p>
-            The rules and notifications may be amended or replaced by
-            subsequent government orders. The original source document
-            should therefore always be checked for the applicable rule.
-        </p>
-
-        <div class="source">
-            <strong>Original Source:</strong><br>
-
-            <a href="#" onclick="openPDF('rte-2009.pdf', 10)">
-                View Original Document → Page 10
-            </a>
-        </div>
-
-    </section>
-
-
-    <div id="noResult" class="no-result">
-        No matching rule found.
-    </div>
-
-</main>
-
+</div>
 
 <footer>
-    RTE 2009 Rules Book
+    RTE Rules Book • Source-linked reference
 </footer>
 
 
 <script>
 
-function searchRules() {
+/* =========================================================
+   SOURCE DOCUMENTS
+   ========================================================= */
 
-    const input = document
-        .getElementById("search")
-        .value
-        .toLowerCase()
-        .trim();
+const PDF_BASE = "pdf/";
 
-    const cards = document.querySelectorAll(".rule-card");
+const rules = [
 
-    let found = false;
+    {
+        id: "rte-03",
+        category: "Right to Education",
+        title: "Right of a child to free and compulsory education",
+        section: "Section 3",
+        keywords: "section 3 age six fourteen 6 14 free compulsory education neighbourhood school elementary education",
+        summary:
+            "The RTE Act provides the right of a child aged six to fourteen years to free and compulsory education in a neighbourhood school until completion of elementary education.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 3
+    },
 
-    cards.forEach(function(card) {
+    {
+        id: "rte-04",
+        category: "Admission",
+        title: "Special provision for children not admitted to school",
+        section: "Section 4",
+        keywords: "section 4 age appropriate admission special training not admitted elementary education",
+        summary:
+            "Section 4 deals with children who were not admitted to school or who did not complete elementary education and provides for age-appropriate admission with special training.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 4
+    },
 
-        const text = card.innerText.toLowerCase();
+    {
+        id: "rte-12",
+        category: "25% Admission",
+        title: "School responsibility for free and compulsory education",
+        section: "Section 12(1)(c)",
+        keywords: "section 12 1 c 25 percent 25% weaker section disadvantaged group class I admission",
+        summary:
+            "Section 12 sets out the extent of school responsibility for free and compulsory education, including the provision concerning children belonging to weaker sections and disadvantaged groups.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 7
+    },
 
-        if (text.includes(input)) {
+    {
+        id: "rte-13",
+        category: "Admission",
+        title: "No capitation fee and no screening procedure",
+        section: "Section 13",
+        keywords: "section 13 capitation fee screening test interview admission selection",
+        summary:
+            "The Act prohibits collection of capitation fee and subjects admission to the prohibition on screening procedures.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8
+    },
 
-            card.style.display = "block";
-            found = true;
+    {
+        id: "rte-14",
+        category: "Age Proof",
+        title: "Proof of age for admission",
+        section: "Section 14",
+        keywords: "section 14 age proof birth certificate admission age certificate document ANM anganwadi declaration",
+        summary:
+            "Age for admission is determined on the basis of the birth certificate or such other document as may be prescribed. A child cannot be denied admission for lack of age proof.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 9
+    },
 
-        } else {
+    {
+        id: "rte-15",
+        category: "Admission",
+        title: "No denial of admission",
+        section: "Section 15",
+        keywords: "section 15 admission academic year late admission extended period denial admission",
+        summary:
+            "A child is to be admitted at the commencement of the academic year or within the prescribed extended period, and admission cannot be denied when it is sought after that period.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 9
+    },
 
-            card.style.display = "none";
+    {
+        id: "adm-2010",
+        category: "25% Admission",
+        title: "Admission process for Section 12(1)(c) and Section 13",
+        section: "Section 12(1)(c) + Section 13(1)",
+        keywords: "25% admission random selection weaker section disadvantaged group screening test interview admission policy",
+        summary:
+            "The 23 November 2010 admission guideline describes a non-discriminatory, rational and transparent admission process. For the 25% pool, random selection is prescribed, while testing and interviews are treated as screening.",
+        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1
+    },
 
-        }
+    {
+        id: "adm-preprimary",
+        category: "25% Admission",
+        title: "Pre-primary admission and the Section 12(1)(c) provision",
+        section: "Section 12(1)(c)",
+        keywords: "pre primary pre-primary class I 25 percent admission section 12 1 c",
+        summary:
+            "The supplied admission guideline addresses the situation where a school admits children at the pre-primary level and explains how the admission requirement applies at that level.",
+        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1
+    },
+
+    {
+        id: "adm-screening",
+        category: "Admission",
+        title: "Screening, tests and interviews",
+        section: "Section 13(1)",
+        keywords: "screening admission test entrance test interview child parent selection prohibited",
+        summary:
+            "The supplied admission guideline treats testing and interviews for selection as screening and states that such screening should not be used.",
+        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 2
+    },
+
+    {
+        id: "ageproof-clarification",
+        category: "Age Proof",
+        title: "Age proof cannot be a condition for admission",
+        section: "Section 14",
+        keywords: "age proof birth certificate ANM anganwadi parent guardian admission cannot deny",
+        summary:
+            "The clarification explains that other documents may be used for determining age and that the right to education cannot be denied merely because age proof is unavailable.",
+        pdf: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 1
+    },
+
+    {
+        id: "late-admission",
+        category: "Admission",
+        title: "Admission after the normal admission period",
+        section: "Section 15",
+        keywords: "late admission academic year migration displacement illness extended period admission",
+        summary:
+            "The clarification discusses the need for flexibility for children in difficult circumstances and notes the provisions concerning admission after the normal admission period.",
+        pdf: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 1
+    },
+
+    {
+        id: "special-training",
+        category: "Special Training",
+        title: "Special training for age-appropriate admission",
+        section: "Section 4 + Model Rule 3",
+        keywords: "special training age appropriate admission rule 3 three months two years learning material",
+        summary:
+            "The Model Rules provide for special training for children requiring it, including children entering an age-appropriate class. The supplied reference material states a minimum period of three months, extendable on assessment up to two years.",
+        pdf: "02_Model_Rules_RTE_2009.pdf",
+        page: 1
+    },
+
+    {
+        id: "special-training-integration",
+        category: "Special Training",
+        title: "Continued support after special training",
+        section: "Special Training",
+        keywords: "special training integration emotional academic attention age appropriate class",
+        summary:
+            "After induction into the age-appropriate class, the supplied material states that the child should continue to receive special attention to support academic and emotional integration.",
+        pdf: "02_Model_Rules_RTE_2009.pdf",
+        page: 2
+    },
+
+    {
+        id: "neighbourhood",
+        category: "Neighbourhood School",
+        title: "Neighbourhood school distance",
+        section: "Model Rule 4",
+        keywords: "neighbourhood school distance 1 km one kilometre classes I V 3 km VI VIII",
+        summary:
+            "The Model Rules specify a neighbourhood school within one kilometre walking distance for Classes I–V and three kilometres for Classes VI–VIII, with provisions for difficult terrain and other access issues.",
+        pdf: "02_Model_Rules_RTE_2009.pdf",
+        page: 2
+    },
+
+    {
+        id: "kvs-neighbourhood",
+        category: "Neighbourhood School",
+        title: "Kendriya Vidyalaya neighbourhood radius",
+        section: "Section 12(1)(c)",
+        keywords: "KVS Kendriya Vidyalaya neighbourhood 5 km 8 km metropolitan district headquarters",
+        summary:
+            "The supplied 2011 KVS communication specifies a defined neighbourhood radius of 5 km for KVs in metropolitan towns and district headquarters and 8 km for other KVs.",
+        pdf: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf",
+        page: 1
+    },
+
+    {
+        id: "teacher-qualification",
+        category: "Teachers",
+        title: "Minimum teacher qualification",
+        section: "Section 23",
+        keywords: "teacher qualification section 23 NCTE academic authority classes I VIII",
+        summary:
+            "Section 23 establishes the minimum qualification framework for teachers and provides for the authorised academic authority and specified relaxation mechanism.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 11
+    },
+
+    {
+        id: "teacher-relaxation",
+        category: "Teachers",
+        title: "Relaxation of teacher qualification",
+        section: "Section 23(2)",
+        keywords: "section 23 2 relaxation teacher qualification state five years TET",
+        summary:
+            "The 8 November 2010 guideline explains the information and conditions associated with a State seeking relaxation under Section 23(2).",
+        pdf: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        page: 1
+    },
+
+    {
+        id: "curriculum",
+        category: "Curriculum",
+        title: "Curriculum and evaluation",
+        section: "Section 29",
+        keywords: "section 29 curriculum evaluation academic authority child centred learning",
+        summary:
+            "Section 29 concerns curriculum and evaluation for elementary education, with the supplied 2012 advisory discussing child-centred curriculum principles.",
+        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 13
+    },
+
+    {
+        id: "grievance",
+        category: "Grievance",
+        title: "Protection of educational rights and grievance redressal",
+        section: "Sections 31–32",
+        keywords: "section 31 section 32 grievance complaint child educational rights SCPCR REPA",
+        summary:
+            "The supplied 2012 advisory explains the framework for complaints concerning children's educational rights and the relevant escalation and appeal mechanisms.",
+        pdf: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        page: 2
+    },
+
+    {
+        id: "teacher-grievance",
+        category: "Grievance",
+        title: "Teacher grievance redressal",
+        section: "Rule 21A",
+        keywords: "rule 21A teacher grievance school management committee complaint",
+        summary:
+            "The 2015 Amendment Rules insert Rule 21A concerning grievance redressal for teachers in the schools covered by the rule.",
+        pdf: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        page: 1
+    },
+
+    {
+        id: "examination-2024",
+        category: "Examination",
+        title: "Examination and holding back provisions",
+        section: "Rule 16A",
+        keywords: "2024 amendment examination holding back class 5 class 8 re examination additional instruction",
+        summary:
+            "The supplied 2024 Amendment Rules insert provisions concerning examinations and holding back in certain cases.",
+        pdf: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1
+    },
+
+    {
+        id: "residential",
+        category: "Residential Schools",
+        title: "Section 12(1)(c) and residential schools",
+        section: "Section 12(1)(c)",
+        keywords: "residential school boarding day scholars 25% section 12 1 c neighbourhood",
+        summary:
+            "The supplied 2012 residential-school guideline addresses the application of Section 12(1)(c) to residential schools and distinguishes day scholars from residential boarders.",
+        pdf: "09_Guidelines_Residential_Schools_13-07-2012.pdf",
+        page: 1
+    },
+
+    {
+        id: "minority",
+        category: "Minority Institutions",
+        title: "RTE applicability to minority educational institutions",
+        section: "Articles 29–30 context",
+        keywords: "minority institution article 29 30 RTE applicability holding back corporal punishment",
+        summary:
+            "The supplied 2014 clarification records the Department of Legal Affairs view concerning applicability of RTE provisions to minority educational institutions in the context of Articles 29 and 30.",
+        pdf: "10_Clarification_Minority_Institutions_27-08-2014.pdf",
+        page: 1
+    }
+
+];
+
+
+/* =========================================================
+   UI
+   ========================================================= */
+
+const searchInput = document.getElementById("searchInput");
+const resultsDiv = document.getElementById("results");
+const resultInfo = document.getElementById("resultInfo");
+const filtersDiv = document.getElementById("filters");
+
+let activeCategory = "All";
+
+
+/* =========================================================
+   CREATE FILTERS
+   ========================================================= */
+
+const categories = [
+    "All",
+    ...new Set(rules.map(rule => rule.category))
+];
+
+categories.forEach(category => {
+
+    const button = document.createElement("button");
+
+    button.className =
+        "filter-btn" + (category === "All" ? " active" : "");
+
+    button.textContent = category;
+
+    button.addEventListener("click", () => {
+
+        activeCategory = category;
+
+        document
+            .querySelectorAll(".filter-btn")
+            .forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        renderResults();
 
     });
 
-    document.getElementById("noResult").style.display =
-        found ? "none" : "block";
+    filtersDiv.appendChild(button);
+
+});
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+searchInput.addEventListener("input", renderResults);
+
+
+/* =========================================================
+   RENDER RESULTS
+   ========================================================= */
+
+function renderResults() {
+
+    const query =
+        searchInput.value
+            .trim()
+            .toLowerCase();
+
+    const filtered = rules.filter(rule => {
+
+        const categoryMatch =
+            activeCategory === "All" ||
+            rule.category === activeCategory;
+
+        const searchableText = [
+            rule.title,
+            rule.section,
+            rule.category,
+            rule.keywords,
+            rule.summary
+        ]
+        .join(" ")
+        .toLowerCase();
+
+        const searchMatch =
+            query === "" ||
+            searchableText.includes(query);
+
+        return categoryMatch && searchMatch;
+
+    });
+
+
+    resultInfo.textContent =
+        `${filtered.length} rule${filtered.length !== 1 ? "s" : ""} found`;
+
+
+    if (filtered.length === 0) {
+
+        resultsDiv.innerHTML = `
+            <div class="no-results">
+                <h3>No matching rule found</h3>
+                <p>Try another keyword, section number or topic.</p>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    resultsDiv.innerHTML =
+        filtered.map(createRuleCard).join("");
+
 }
 
 
-function openPDF(file, page) {
+/* =========================================================
+   CREATE RULE CARD
+   ========================================================= */
 
-    /*
-       PDF.js viewer will be connected here later.
+function createRuleCard(rule) {
 
-       For now this function simply opens the PDF.
-    */
+    const pdfUrl =
+        PDF_BASE +
+        encodeURIComponent(rule.pdf) +
+        `#page=${rule.page}`;
 
-    const url = "pdf/" + file + "#page=" + page;
+    return `
+        <article class="rule-card">
 
-    window.open(url, "_blank");
+            <span class="category">
+                ${escapeHTML(rule.category)}
+            </span>
+
+            <h2>
+                ${escapeHTML(rule.title)}
+            </h2>
+
+            <p>
+                <strong>${escapeHTML(rule.section)}</strong>
+            </p>
+
+            <p>
+                ${escapeHTML(rule.summary)}
+            </p>
+
+            <div class="source">
+
+                <div>
+                    <strong>Source:</strong>
+                    ${escapeHTML(rule.pdf)}
+                </div>
+
+                <div>
+                    <strong>PDF Page:</strong>
+                    ${rule.page}
+                </div>
+
+                <a
+                    class="source-btn"
+                    href="${pdfUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📄 View Source Page
+                </a>
+
+            </div>
+
+        </article>
+    `;
 }
+
+
+/* =========================================================
+   BASIC HTML ESCAPE
+   ========================================================= */
+
+function escapeHTML(value) {
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================================
+   INITIAL LOAD
+   ========================================================= */
+
+renderResults();
 
 </script>
 
