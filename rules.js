@@ -1,889 +1,1006 @@
-/*
- * RTE 2009 Rules Database
- * Source-based database prepared from the supplied RTE documents.
- *
- * PDF page numbers below are the PDF page numbers, not printed page labels.
- */
+/* =========================================================
+   RTE RULES DATABASE
+   Source-based searchable rules index
+   Version: September 2026
+   ========================================================= */
+
+const PDF_BASE = "pdf/";
 
 const RTE_RULES = [
 
-  // =========================================================
-  // CORE RTE ACT
-  // =========================================================
+  /* =========================
+     CORE RTE ACT
+     ========================= */
 
   {
     id: "RTE-001",
-    title: "Child's Right to Free and Compulsory Education",
+    title: "Child's right to free and compulsory education",
     category: "Core RTE Act",
     section: "Section 3",
     keywords: [
       "section 3",
-      "right to education",
       "free education",
       "compulsory education",
-      "6 to 14 years",
-      "six to fourteen",
-      "elementary education"
+      "6 years",
+      "14 years",
+      "child"
     ],
     summary:
-      "Every child of the age of six to fourteen years has the right to free and compulsory education in a neighbourhood school until completion of elementary education.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 3,
-      label: "RTE Act, 2009 - Section 3"
-    }
+      "Every child of the age of six to fourteen years has the right to free and compulsory education in a neighbourhood school till completion of elementary education.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 3,
+        label: "RTE Act, Section 3"
+      }
+    ]
   },
 
   {
     id: "RTE-002",
-    title: "Special Provision for Children Not Admitted or Unable to Complete Elementary Education",
-    category: "Admission & Age",
+    title: "Age-appropriate admission and special provisions",
+    category: "Age & Admission",
     section: "Section 4",
     keywords: [
       "section 4",
-      "age appropriate admission",
+      "age appropriate",
+      "age-appropriate admission",
       "special training",
-      "not admitted",
-      "did not complete elementary education",
-      "appropriate class"
+      "out of school child"
     ],
     summary:
-      "A child who has not been admitted to school or who could not complete elementary education is to be admitted to an age-appropriate class and is entitled to special training in the prescribed manner.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 4,
-      label: "RTE Act, 2009 - Section 4"
-    }
+      "A child who has not been admitted to school or has not completed elementary education shall be admitted to an age-appropriate class and shall have a right to receive special training as prescribed.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 3,
+        label: "RTE Act, Section 4"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 1,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-003",
-    title: "25% Admission for Weaker Sections and Disadvantaged Groups",
+    title: "25% admission for weaker sections and disadvantaged groups",
     category: "25% Admission",
     section: "Section 12(1)(c)",
     keywords: [
+      "25%",
+      "25 percent",
       "section 12",
       "12(1)(c)",
-      "25 percent",
-      "25%",
       "weaker section",
       "disadvantaged group",
-      "class I",
-      "neighbourhood",
-      "free education"
+      "admission"
     ],
     summary:
-      "Schools covered by Section 12(1)(c) are required to admit children belonging to weaker sections and disadvantaged groups from the neighbourhood to at least twenty-five per cent of the strength of Class I and provide free and compulsory elementary education until completion.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 7,
-      label: "RTE Act, 2009 - Section 12(1)(c)"
-    }
+      "For schools covered by Section 12(1)(c), at least 25% of the Class I strength is the statutory reference point for admission of children belonging to weaker sections and disadvantaged groups.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 7,
+        label: "RTE Act, Section 12(1)(c)"
+      },
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-004",
-    title: "25% Provision Where School Has Pre-School Education",
+    title: "25% provision where admission begins at pre-primary level",
     category: "25% Admission",
-    section: "Section 12(1)(c) Proviso",
+    section: "Section 12(1)(c)",
     keywords: [
-      "pre-school",
-      "pre primary",
       "pre-primary",
-      "nursery",
+      "pre primary",
       "25%",
-      "12(1)(c)",
-      "preschool admission"
+      "section 12(1)(c)",
+      "nursery",
+      "admission"
     ],
     summary:
-      "Where a school covered by Section 12(1)(c) imparts pre-school education, the relevant admission provisions apply to admission at the pre-school level as well.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 7,
-      label: "RTE Act - Section 12(1)(c) proviso"
-    }
+      "Where a school admits children at the pre-primary level, the admission requirement under the guideline applies at that level.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-005",
-    title: "No Capitation Fee",
+    title: "No capitation fee",
     category: "Admission",
     section: "Section 13(1)",
     keywords: [
+      "capitation",
       "capitation fee",
       "donation",
       "admission fee",
-      "section 13",
-      "school admission"
+      "section 13"
     ],
     summary:
       "No school or person shall collect any capitation fee while admitting a child.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 8,
-      label: "RTE Act - Section 13"
-    }
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 13"
+      }
+    ]
   },
 
   {
     id: "RTE-006",
-    title: "No Screening Procedure During Admission",
+    title: "No screening procedure for admission",
     category: "Admission",
     section: "Section 13(1)",
     keywords: [
       "screening",
       "screening procedure",
-      "admission test",
-      "entrance test",
+      "test",
       "interview",
-      "section 13",
-      "selection"
+      "admission test",
+      "section 13"
     ],
     summary:
-      "A school or person shall not subject a child or the child's parents or guardian to any screening procedure while admitting the child.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 8,
-      label: "RTE Act - Section 13"
-    }
+      "No child or parent shall be subjected to a screening procedure for admission.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 13"
+      },
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 2,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-007",
-    title: "Penalty for Collecting Capitation Fee",
+    title: "Penalty for collecting capitation fee",
     category: "Admission",
     section: "Section 13(2)(a)",
     keywords: [
-      "capitation fee penalty",
+      "capitation",
+      "penalty",
       "fine",
-      "section 13(2)",
-      "ten times",
-      "admission donation"
+      "section 13(2)"
     ],
     summary:
-      "A school or person receiving capitation fee in contravention of Section 13 may be punishable with a fine extending to ten times the capitation fee charged.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 8,
-      label: "RTE Act - Section 13(2)(a)"
-    }
+      "Collection of capitation fee is subject to the penalty prescribed under Section 13.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 13(2)"
+      }
+    ]
   },
 
   {
     id: "RTE-008",
-    title: "Penalty for Screening Procedure",
+    title: "Penalty for screening procedure",
     category: "Admission",
     section: "Section 13(2)(b)",
     keywords: [
-      "screening penalty",
-      "screening fine",
-      "25000",
-      "50000",
-      "section 13(2)(b)"
+      "screening",
+      "penalty",
+      "fine",
+      "test",
+      "interview",
+      "section 13(2)"
     ],
     summary:
-      "Subjecting a child to a screening procedure may attract a fine of up to ₹25,000 for the first contravention and ₹50,000 for each subsequent contravention.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 8,
-      label: "RTE Act - Section 13(2)(b)"
-    }
+      "Subjecting a child to a screening procedure is subject to the penalty prescribed under Section 13.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 13(2)"
+      }
+    ]
   },
 
   {
     id: "RTE-009",
-    title: "Proof of Age for Admission",
-    category: "Age Proof",
+    title: "Proof of age for admission",
+    category: "Age & Admission",
     section: "Section 14",
     keywords: [
-      "section 14",
       "proof of age",
       "age proof",
-      "birth certificate",
-      "birth registration",
-      "admission age",
-      "age document"
+      "date of birth",
+      "section 14",
+      "birth certificate"
     ],
     summary:
-      "For admission to elementary education, the child's age is determined on the basis of the birth certificate or such other document as may be prescribed.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 14"
-    }
+      "For admission, the age of a child shall be determined with reference to the proof of age specified under the applicable rules.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 14"
+      }
+    ]
   },
 
   {
     id: "RTE-010",
-    title: "Admission Cannot Be Denied for Lack of Age Proof",
-    category: "Age Proof",
-    section: "Section 14(2)",
+    title: "Admission cannot be denied merely for lack of age proof",
+    category: "Age & Admission",
+    section: "Section 14",
     keywords: [
-      "no age proof",
-      "lack of age proof",
-      "age certificate",
-      "birth certificate unavailable",
-      "admission cannot be denied",
-      "section 14(2)"
+      "age proof",
+      "no denial",
+      "admission",
+      "birth certificate",
+      "section 14"
     ],
     summary:
-      "No child shall be denied admission in a school merely because age proof is not available.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 14(2)"
-    }
+      "No child shall be denied admission for lack of age proof in the manner prohibited by the Act.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 14"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 2,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-011",
-    title: "No Denial of Admission After the Prescribed Period",
-    category: "Admission",
+    title: "Admission cannot be denied because of late admission",
+    category: "Age & Admission",
     section: "Section 15",
     keywords: [
-      "section 15",
       "late admission",
-      "admission after academic year",
-      "no denial",
-      "extended period",
-      "admission during session"
+      "academic session",
+      "section 15",
+      "admission",
+      "denial"
     ],
     summary:
-      "A child should not be denied admission merely because admission is sought after the commencement of the academic year or after the prescribed extended period.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 15"
-    }
+      "No child shall be denied admission to a school even if admission is sought after the commencement of the academic year.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 15"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 3,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-012",
-    title: "Regular Examination in Class V and Class VIII",
+    title: "Regular examination for Classes V and VIII",
     category: "Examination",
-    section: "Section 16(1)",
+    section: "Rule 16A",
     keywords: [
-      "section 16",
       "class 5",
       "class V",
       "class 8",
       "class VIII",
+      "examination",
       "regular examination",
-      "annual examination"
+      "2024 amendment"
     ],
     summary:
-      "A regular examination is to be held in Class V and Class VIII at the end of every academic year.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 16(1)"
-    }
+      "Under the 2024 amendment reproduced in the supplied materials, a regular examination is to be held at the end of every academic year for Class V and Class VIII.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-013",
-    title: "Additional Instruction and Re-examination",
+    title: "Additional instruction and re-examination",
     category: "Examination",
-    section: "Section 16(2)",
+    section: "Rule 16A",
     keywords: [
       "re-examination",
-      "re exam",
+      "re examination",
       "additional instruction",
       "two months",
+      "2 months",
       "class V",
-      "class VIII",
-      "section 16(2)"
+      "class VIII"
     ],
     summary:
-      "If a child fails the regular examination, additional instruction must be provided and an opportunity for re-examination must be granted within two months from declaration of the result.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 16(2)"
-    }
+      "If a child does not fulfil the notified promotion criteria, additional instruction and an opportunity for re-examination shall be provided within two months from declaration of results.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-014",
-    title: "Holding Back After Failure in Re-examination",
+    title: "Holding back after failure in re-examination",
     category: "Examination",
-    section: "Section 16(3)",
+    section: "Rule 16A",
     keywords: [
       "holding back",
       "detention",
-      "fail re examination",
-      "class V holding back",
-      "class VIII holding back",
-      "section 16(3)"
+      "failed",
+      "re-examination",
+      "class V",
+      "class VIII"
     ],
     summary:
-      "The appropriate Government may allow schools to hold back a child in Class V or Class VIII, or both, subject to the prescribed manner and conditions, if the child fails the re-examination.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 16(3)"
-    }
+      "If a child again fails to fulfil the promotion criteria in the re-examination, the child may be held back in Class V or Class VIII, as applicable, under the 2024 amendment reproduced in the supplied materials.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-015",
-    title: "No Expulsion Until Completion of Elementary Education",
-    category: "Examination",
-    section: "Section 16(4)",
+    title: "No expulsion before completion of elementary education",
+    category: "Examination & Expulsion",
+    section: "Section 16",
     keywords: [
       "expulsion",
-      "no expulsion",
       "elementary education",
-      "section 16(4)",
-      "school expulsion"
+      "section 16",
+      "school leaving"
     ],
     summary:
-      "No child shall be expelled from a school until completion of elementary education.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 16(4)"
-    }
+      "No child shall be expelled from school till the completion of elementary education.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 9,
+        label: "RTE Act, Section 16"
+      },
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 3,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-016",
-    title: "No Physical Punishment or Mental Harassment",
+    title: "No physical punishment or mental harassment",
     category: "Child Protection",
     section: "Section 17",
     keywords: [
       "physical punishment",
-      "corporal punishment",
       "mental harassment",
-      "section 17",
-      "child protection"
+      "corporal punishment",
+      "section 17"
     ],
     summary:
-      "No child shall be subjected to physical punishment or mental harassment in school.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 17"
-    }
+      "No child shall be subjected to physical punishment or mental harassment.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 9,
+        label: "RTE Act, Section 17"
+      }
+    ]
   },
 
   {
     id: "RTE-017",
-    title: "Recognition of Schools",
+    title: "Recognition of schools",
     category: "School Recognition",
     section: "Section 18",
     keywords: [
       "recognition",
       "school recognition",
-      "certificate of recognition",
       "section 18",
-      "recognised school"
+      "certificate"
     ],
     summary:
-      "Schools covered by Section 18 cannot be established or function without obtaining the required certificate of recognition.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 9,
-      label: "RTE Act - Section 18"
-    }
+      "A school other than a school established, owned or controlled by the appropriate Government or local authority shall not be established or function without obtaining a certificate of recognition in the prescribed manner.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 9,
+        label: "RTE Act, Section 18"
+      },
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 5,
+        label: "Model Rules"
+      }
+    ]
   },
 
-  // =========================================================
-  // SPECIAL TRAINING
-  // =========================================================
+
+  /* =========================
+     SPECIAL TRAINING
+     ========================= */
 
   {
     id: "RTE-018",
-    title: "Special Training for Age-Appropriate Admission",
+    title: "Special training for age-appropriate admission",
     category: "Special Training",
     section: "Section 4 / Rule 3",
     keywords: [
       "special training",
       "age appropriate",
-      "age-appropriate class",
+      "age-appropriate",
       "rule 3",
-      "special class",
-      "learning gap"
+      "section 4"
     ],
     summary:
-      "Children requiring special support after admission to an age-appropriate class may receive special training designed to bring them to the level of their peers.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 1,
-      label: "Model Rules - Rule 3"
-    }
+      "Children admitted to an age-appropriate class may receive special training to enable them to come to the level of their peers.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 1,
+        label: "Model Rules, Rule 3"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 1,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-019",
-    title: "Minimum and Maximum Period of Special Training",
+    title: "Special training period: minimum three months, maximum two years",
     category: "Special Training",
-    section: "Rule 3",
+    section: "Model Rules Rule 3",
     keywords: [
-      "three months",
       "3 months",
-      "two years",
+      "three months",
       "2 years",
-      "special training duration",
+      "two years",
+      "special training",
       "rule 3"
     ],
     summary:
-      "The model rules provide a minimum special-training period of three months. Based on assessment, it may be extended up to a maximum of two years.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 1,
-      label: "Model Rules - Rule 3"
-    }
+      "The Model Rules provide a minimum special-training period of three months, extendable on assessment up to a maximum of two years.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 2,
+        label: "Model Rules, Rule 3"
+      }
+    ]
   },
 
   {
     id: "RTE-020",
-    title: "Age-Appropriate Learning Material for Special Training",
+    title: "Age-appropriate learning material for special training",
     category: "Special Training",
-    section: "Rule 3",
+    section: "Model Rules Rule 3",
     keywords: [
       "learning material",
-      "special training material",
       "age appropriate material",
-      "section 29",
-      "academic authority"
+      "special training",
+      "academic authority",
+      "section 29"
     ],
     summary:
       "Special training should use specially designed, age-appropriate learning material approved by the academic authority under Section 29(1).",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 1,
-      label: "Model Rules - Rule 3"
-    }
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 2,
+        label: "Model Rules, Rule 3"
+      }
+    ]
   },
 
-  // =========================================================
-  // NEIGHBOURHOOD
-  // =========================================================
+
+  /* =========================
+     NEIGHBOURHOOD
+     ========================= */
 
   {
     id: "RTE-021",
-    title: "Neighbourhood School Distance for Classes I-V",
+    title: "Neighbourhood distance for Classes I-V",
     category: "Neighbourhood School",
-    section: "Rule 4",
+    section: "Model Rules Rule 4",
     keywords: [
-      "neighbourhood school",
       "1 km",
-      "one kilometre",
-      "classes I to V",
-      "class I",
-      "class V",
-      "walking distance"
+           "one kilometre",
+      "classes I-V",
+      "class 1",
+      "class 5",
+      "neighbourhood"
     ],
     summary:
-      "For Classes I to V, the model rules specify a neighbourhood school within a walking distance of 1 kilometre.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 2,
-      label: "Model Rules - Rule 4"
-    }
+      "The Model Rules specify a neighbourhood school within a walking distance of 1 kilometre for Classes I to V.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 2,
+        label: "Model Rules, Rule 4"
+      }
+    ]
   },
 
   {
     id: "RTE-022",
-    title: "Neighbourhood School Distance for Classes VI-VIII",
+    title: "Neighbourhood distance for Classes VI-VIII",
     category: "Neighbourhood School",
-    section: "Rule 4",
+    section: "Model Rules Rule 4",
     keywords: [
-      "neighbourhood school",
       "3 km",
       "three kilometre",
-      "classes VI to VIII",
-      "class VI",
-      "class VIII",
-      "walking distance"
+      "classes VI-VIII",
+      "class 6",
+      "class 8",
+      "neighbourhood"
     ],
     summary:
-      "For Classes VI to VIII, the model rules specify a neighbourhood school within a walking distance of 3 kilometres.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 2,
-      label: "Model Rules - Rule 4"
-    }
+      "The Model Rules specify a neighbourhood school within a walking distance of 3 kilometres for Classes VI to VIII.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 3,
+        label: "Model Rules, Rule 4"
+      }
+    ]
   },
 
   {
     id: "RTE-023",
-    title: "Special Arrangements in Difficult Terrain",
+    title: "Neighbourhood distance in difficult terrain",
     category: "Neighbourhood School",
-    section: "Rule 4",
+    section: "Model Rules Rule 4",
     keywords: [
       "difficult terrain",
       "danger",
+      "reduced distance",
       "neighbourhood",
-      "transportation",
-      "residential facility",
-      "small hamlet"
+      "school access"
     ],
     summary:
-      "The model rules address difficult terrain and situations where the normal approach to school creates danger, and provide for appropriate access arrangements.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 2,
-      label: "Model Rules - Rule 4"
-    }
+      "In difficult terrain or where the approach creates danger, the specified neighbourhood limits may be reduced as contemplated by the Model Rules.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 3,
+        label: "Model Rules, Rule 4"
+      }
+    ]
   },
 
   {
     id: "RTE-024",
-    title: "Transportation or Residential Arrangement for Small Hamlets",
+    title: "Transportation or residential arrangements for small hamlets",
     category: "Neighbourhood School",
-    section: "Rule 4",
+    section: "Model Rules Rule 4",
     keywords: [
       "small hamlet",
       "transportation",
       "free transportation",
       "residential facility",
-      "no neighbourhood school",
-      "access to school"
+      "neighbourhood"
     ],
     summary:
-      "Where small hamlets do not have a neighbourhood school, arrangements such as free transportation or residential facilities may be made.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 2,
-      label: "Model Rules - Rule 4"
-    }
+      "For small hamlets without a neighbourhood school, adequate arrangements such as free transportation or residential facilities may be made.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 3,
+        label: "Model Rules, Rule 4"
+      }
+    ]
   },
 
-  // =========================================================
-  // ADMISSION GUIDELINES 23-11-2010
-  // =========================================================
+
+  /* =========================
+     ADMISSION GUIDELINE
+     ========================= */
 
   {
     id: "RTE-025",
-    title: "Admission Procedure Must Be Non-Discriminatory and Transparent",
-    category: "Admission Guidelines",
-    section: "Section 13(1) + Section 12(1)(c)",
+    title: "Admission process should be non-discriminatory, rational and transparent",
+    category: "Admission Guideline",
+    section: "2010 Admission Guideline",
     keywords: [
       "non discriminatory",
       "non-discriminatory",
-      "transparent admission",
       "rational",
-      "admission procedure",
-      "2010 admission guideline"
+      "transparent",
+      "admission policy",
+      "2010 guideline"
     ],
     summary:
-      "The 23 November 2010 guideline explains that admission procedures should be non-discriminatory, rational and transparent.",
-    source: {
-      file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-      page: 1,
-      label: "Admission Guidelines - 23 November 2010"
-    }
+      "The 23 November 2010 admission guideline describes the objective of a non-discriminatory, rational and transparent admission process.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-026",
-    title: "Random Selection for the 25% Admission Pool",
+    title: "Random selection for the 25% admission pool",
     category: "25% Admission",
-    section: "Section 12(1)(c)",
+    section: "2010 Admission Guideline",
     keywords: [
       "random selection",
       "lottery",
-      "25% admission",
+      "25%",
       "weaker section",
       "disadvantaged group",
-      "random basis"
+      "selection"
     ],
     summary:
-      "For the 25% admission pool for disadvantaged groups and weaker sections, the guideline provides for random selection from the applications received.",
-    source: {
-      file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-      page: 1,
-      label: "Admission Guidelines - Random Selection"
-    }
+      "For the predetermined 25% seats under Section 12(1)(c), the guideline provides for random selection from eligible applications.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 1,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-027",
-    title: "No Testing or Interview for Admission Selection",
-    category: "Admission Guidelines",
-    section: "Section 13(1)",
+    title: "No testing or interview for admission selection",
+    category: "Admission Guideline",
+    section: "Section 13 / 2010 Guideline",
     keywords: [
       "test",
       "testing",
       "interview",
-      "admission interview",
       "admission test",
       "screening",
-      "profiling"
+      "selection"
     ],
     summary:
-      "The guideline states that children and parents should not be subjected to admission tests or interviews for deciding admission.",
-    source: {
-      file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-      page: 1,
-      label: "Admission Guidelines - Screening"
-    }
+      "The admission guideline states that there shall be no testing or interviews for children or parents falling within or outside the specified categories.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 2,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-028",
-    title: "No Profiling Based on Parents' Educational Qualifications",
-    category: "Admission Guidelines",
-    section: "Admission Policy",
+    title: "No profiling based on parental educational qualifications",
+    category: "Admission Guideline",
+    section: "2010 Admission Guideline",
     keywords: [
       "parental education",
-      "parent educational qualification",
+      "educational qualification",
       "profiling",
-      "admission policy",
-      "school prospectus",
-      "25 percent"
+      "admission",
+      "selection"
     ],
     summary:
-      "The admission guideline states that there should be no profiling of a child based on the educational qualifications of the parents.",
-    source: {
-      file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-      page: 1,
-      label: "Admission Guidelines - Admission Policy"
-    }
+      "The admission policy should not profile a child based on the educational qualifications of the parents.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 2,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-029",
-    title: "Admission Policy Should Be Public",
-    category: "Admission Guidelines",
-    section: "Admission Policy",
+    title: "School admission policy should be public",
+    category: "Admission Guideline",
+    section: "2010 Admission Guideline",
     keywords: [
       "public domain",
       "prospectus",
       "admission policy",
       "publicity",
-      "school policy",
-      "admission criteria"
+      "school policy"
     ],
     summary:
-      "For the remaining admissions, the school's admission policy should be rational, reasonable and placed in the public domain, including through the school prospectus.",
-    source: {
-      file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-      page: 2,
-      label: "Admission Guidelines - Admission Policy"
-    }
+      "The school admission policy should be placed in the public domain, given wide publicity and stated in the school prospectus.",
+    sourcePages: [
+      {
+        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        page: 2,
+        label: "2010 Admission Guideline"
+      }
+    ]
   },
 
-  // =========================================================
-  // AGE PROOF / LATE ADMISSION CLARIFICATION
-  // =========================================================
+
+  /* =========================
+     AGE CLARIFICATION
+     ========================= */
 
   {
     id: "RTE-030",
-    title: "Alternative Documents May Serve as Age Proof",
-    category: "Age Proof",
-    section: "Section 14",
+    title: "Alternative documents for establishing age",
+    category: "Age & Admission",
+    section: "Clarification on Provisions",
     keywords: [
       "age proof",
-      "alternative document",
+      "age document",
       "ANM register",
       "Anganwadi",
       "parent declaration",
-      "birth certificate"
+      "date of birth"
     ],
     summary:
-      "The clarification explains that where a birth certificate is unavailable, other prescribed documents may be used for determining the child's age for admission. Examples discussed include ANM register records, Anganwadi records and declaration of age by a parent or guardian.",
-    source: {
-      file: "13_RTE_Act_Clarification_on_Provisions.pdf",
-      page: 1,
-      label: "RTE Clarification - Proof of Age"
-    }
+      "The clarification document discusses alternative records that may be used for establishing age, including specified local records and a declaration by the parent or guardian in appropriate circumstances.",
+    sourcePages: [
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 2,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-031",
-    title: "Admission Should Not Be Denied for Lack of Age Proof",
-    category: "Age Proof",
-    section: "Section 14(2)",
+    title: "Lack of age proof should not block admission",
+    category: "Age & Admission",
+    section: "Section 14",
     keywords: [
-      "lack of age proof",
+      "age proof",
+      "no denial",
       "admission",
       "birth certificate",
-      "no denial",
-      "age document",
-      "section 14"
+      "parent declaration"
     ],
     summary:
-      "The clarification explains the rationale behind Section 14(2): a child's right to education should not be denied merely because age proof is unavailable.",
-    source: {
-      file: "13_RTE_Act_Clarification_on_Provisions.pdf",
-      page: 1,
-      label: "RTE Clarification - Age Proof"
-    }
+      "The supplied clarification reinforces that lack of the specified age document should not be used to deny admission in the circumstances covered by the Act.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 14"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 2,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-032",
-    title: "Admission at Any Time During the Academic Session",
-    category: "Late Admission",
+    title: "Admission even after commencement of academic session",
+    category: "Age & Admission",
     section: "Section 15",
     keywords: [
       "late admission",
-      "admission any time",
       "academic session",
-      "migration",
-      "displacement",
-      "ill health",
+      "academic year",
+      "admission anytime",
       "section 15"
     ],
     summary:
-      "The clarification discusses flexibility for children in difficult circumstances, including migration, displacement or ill health, so that admission is not denied merely because it is sought later in the academic session.",
-    source: {
-      file: "13_RTE_Act_Clarification_on_Provisions.pdf",
-      page: 1,
-      label: "RTE Clarification - Late Admission"
-    }
+      "The supplied materials state that admission cannot be denied merely because it is sought after the beginning of the academic year.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 8,
+        label: "RTE Act, Section 15"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 3,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
   {
     id: "RTE-033",
-    title: "Special Training for Children Admitted Late",
-    category: "Late Admission",
-    section: "Section 15 / Central RTE Rules",
+    title: "Special training for children admitted late or at an age-appropriate class",
+    category: "Special Training",
+    section: "Section 4 / Model Rules",
     keywords: [
       "late admission",
-      "six months",
       "special training",
+      "age appropriate",
       "academic session",
-      "head teacher",
-      "completion of studies"
+      "peer level"
     ],
     summary:
-      "The clarification discusses that children admitted after six months from the beginning of the academic session may be provided special training as determined by the Head Teacher to enable completion of studies.",
-    source: {
-      file: "13_RTE_Act_Clarification_on_Provisions.pdf",
-      page: 1,
-      label: "RTE Clarification - Late Admission"
-    }
+      "Children requiring it may receive special training so that they can reach the learning level of their peers and integrate into the age-appropriate class.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 1,
+        label: "Model Rules"
+      },
+      {
+        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        page: 3,
+        label: "Clarification on Provisions"
+      }
+    ]
   },
 
-  // =========================================================
-  // TEACHER QUALIFICATION
-  // =========================================================
+
+  /* =========================
+     TEACHERS
+     ========================= */
 
   {
     id: "RTE-034",
-    title: "Minimum Qualifications for Teachers",
+    title: "Minimum teacher qualification",
     category: "Teachers",
     section: "Section 23",
     keywords: [
       "teacher qualification",
       "minimum qualification",
       "section 23",
-      "classes I to VIII",
       "NCTE",
-      "teacher appointment"
+      "academic authority"
     ],
     summary:
-      "Section 23 establishes the minimum qualification framework for appointment as a teacher in elementary education, with qualifications laid down by the authorised academic authority.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 11,
-      label: "RTE Act - Section 23"
-    }
+      "The minimum qualifications of teachers are to be laid down by an authorised academic authority as contemplated by Section 23.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 11,
+        label: "RTE Act, Section 23"
+      }
+    ]
   },
 
   {
     id: "RTE-035",
-    title: "Relaxation of Teacher Qualification Requirements",
+    title: "Relaxation of minimum teacher qualification",
     category: "Teachers",
     section: "Section 23(2)",
     keywords: [
-      "teacher qualification relaxation",
-      "section 23(2)",
+      "teacher qualification",
       "relaxation",
+      "section 23(2)",
       "five years",
-      "state relaxation",
-      "qualification"
+      "Central Government"
     ],
     summary:
-      "The 8 November 2010 guideline explains the process for a State seeking relaxation under Section 23(2), including information about the shortage, nature and period of relaxation and qualification plans.",
-    source: {
-      file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
-      page: 1,
-      label: "Section 23(2) Guidelines"
-    }
+      "Where the statutory conditions are met, the Central Government may relax minimum teacher qualification requirements for the period specified by notification.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 11,
+        label: "RTE Act, Section 23(2)"
+      },
+      {
+        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        page: 1,
+        label: "8 November 2010 Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-036",
-    title: "Maximum Period Mentioned for Section 23(2) Relaxation",
+    title: "Maximum five-year relaxation under Section 23(2)",
     category: "Teachers",
     section: "Section 23(2)",
     keywords: [
       "five years",
       "5 years",
-      "teacher relaxation",
-      "section 23(2)",
-      "period of relaxation"
+      "relaxation",
+      "teacher qualification",
+      "section 23(2)"
     ],
     summary:
-      "The 8 November 2010 guideline states that relaxation under Section 23(2) cannot exceed five years for the period specified in the notification.",
-    source: {
-      file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
-      page: 1,
-      label: "Section 23(2) Guidelines"
-    }
+      "The supplied 8 November 2010 guideline states that relaxation under Section 23(2) cannot exceed five years for the period specified in the notification.",
+    sourcePages: [
+      {
+        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        page: 1,
+        label: "8 November 2010 Guideline"
+      }
+    ]
   },
 
   {
     id: "RTE-037",
-    title: "West Bengal Teacher Qualification Relaxation Notification",
+    title: "West Bengal teacher qualification relaxation",
     category: "Teachers",
-    section: "Teacher Qualification Relaxation",
+    section: "Section 23(2)",
     keywords: [
       "West Bengal",
       "teacher qualification",
       "relaxation",
       "TET",
       "31 March 2014",
-      "2011 notification"
+      "2011 Gazette"
     ],
     summary:
-      "The 10 June 2011 Gazette material contains a time-limited relaxation for specified teacher qualification norms in West Bengal, subject to stated conditions.",
-    source: {
-      file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
-      page: 2,
-      label: "10 June 2011 Gazette - West Bengal"
-    }
+      "The supplied 2011 Gazette material granted a time-limited relaxation for certain teacher qualification norms in West Bengal, subject to stated conditions, with validity up to 31 March 2014.",
+    sourcePages: [
+      {
+        file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
+        page: 2,
+        label: "2011 Gazette"
+      }
+    ]
   },
 
-  // =========================================================
-  // KVS
-  // =========================================================
+
+  /* =========================
+     KVS
+     ========================= */
 
   {
     id: "RTE-038",
-    title: "Kendriya Vidyalaya Neighbourhood Radius",
+    title: "KVS neighbourhood radius",
     category: "KVS",
-    section: "Section 12(1)(c)",
+    section: "Section 12(1)(c) Guidance",
     keywords: [
       "KVS",
       "Kendriya Vidyalaya",
       "5 km",
       "8 km",
       "neighbourhood",
-      "metropolitan town",
+      "metropolitan",
       "district headquarters"
     ],
     summary:
-      "The supplied KVS communication specifies a neighbourhood radius of 5 km for Kendriya Vidyalayas in metropolitan towns and district headquarters and 8 km for other Kendriya Vidyalayas.",
-    source: {
-      file: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf",
-      page: 1,
-      label: "KVS Guidance - 2 February 2011"
-    }
+      "The supplied 2011 KVS communication specifies a neighbourhood radius of 5 km for Kendriya Vidyalayas in metropolitan towns and district headquarters and 8 km for other Kendriya Vidyalayas.",
+    sourcePages: [
+      {
+        file: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf",
+        page: 1,
+        label: "KVS Guidance, 2 February 2011"
+      }
+    ]
   },
 
-  // =========================================================
-  // CURRICULUM
-  // =========================================================
+
+  /* =========================
+     CURRICULUM
+     ========================= */
 
   {
     id: "RTE-039",
-    title: "Curriculum and Evaluation Procedure",
+    title: "Curriculum and evaluation under Section 29",
     category: "Curriculum",
     section: "Section 29",
     keywords: [
@@ -891,397 +1008,473 @@ const RTE_RULES = [
       "curriculum",
       "evaluation",
       "academic authority",
-      "elementary education",
-      "syllabus"
+      "elementary education"
     ],
     summary:
-      "Section 29 provides for the curriculum and evaluation procedure for elementary education to be laid down by an academic authority specified by the appropriate Government.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 12,
-      label: "RTE Act - Section 29"
-    }
+      "The curriculum and evaluation procedure for elementary education shall be laid down by an academic authority specified by the appropriate Government.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 12,
+        label: "RTE Act, Section 29"
+      },
+      {
+        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        page: 1,
+        label: "31 January 2012 Advisory"
+      }
+    ]
   },
 
   {
     id: "RTE-040",
-    title: "Child-Centred Curriculum Principles",
+    title: "Child-centred curriculum",
     category: "Curriculum",
-    section: "Section 29 / 2012 Advisory",
+    section: "Section 29(2)",
     keywords: [
       "child centred",
-      "child-centered",
+      "child-centred",
       "curriculum",
-      "constitutional values",
-      "all round development",
-      "mother tongue",
-      "fear trauma anxiety"
+      "activities",
+      "discovery",
+      "exploration"
     ],
     summary:
-      "The 31 January 2012 advisory discusses child-centred curriculum principles including constitutional values, all-round development, child-friendly learning, mother tongue as far as practicable, freedom from fear and anxiety, and comprehensive and continuous evaluation.",
-    source: {
-      file: "07_Advisory_Section_29_31-01-2012.pdf",
-      page: 1,
-      label: "Section 29 Advisory - 31 January 2012"
-    }
+      "The supplied advisory explains child-centred curriculum principles, including learning through activities, discovery and exploration and attention to the child's abilities and development.",
+    sourcePages: [
+      {
+        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        page: 1,
+        label: "31 January 2012 Advisory"
+      }
+    ]
   },
 
   {
     id: "RTE-041",
-    title: "Age-Appropriate Curriculum and Rationalised Textbook Load",
+    title: "Age-appropriate curriculum and rationalisation of textbook load",
     category: "Curriculum",
-    section: "Section 29 Advisory",
+    section: "Section 29",
     keywords: [
-      "age appropriate curriculum",
-      "NCF 2005",
+      "age appropriate",
+      "curriculum",
+      "textbook",
       "textbook load",
-      "syllabus",
-      "rationalise",
-      "child centred pedagogy"
+      "burden",
+      "NCF 2005"
     ],
     summary:
-      "The supplied advisory discusses age-appropriate curricula and syllabi, alignment with NCF-2005, and rationalisation of subject and textbook load to avoid unnecessary burden.",
-    source: {
-      file: "07_Advisory_Section_29_31-01-2012.pdf",
-      page: 2,
-      label: "Section 29 Advisory"
-    }
+      "The supplied advisory states that curricula and syllabi should be age-appropriate and discusses rationalisation of subject and textbook load to avoid unnecessary burden.",
+    sourcePages: [
+      {
+        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        page: 2,
+        label: "31 January 2012 Advisory"
+      }
+    ]
   },
 
-  // =========================================================
-  // GRIEVANCE
-  // =========================================================
+
+  /* =========================
+     CHILD GRIEVANCE
+     ========================= */
 
   {
     id: "RTE-042",
-    title: "Protection of Child's Right to Education",
+    title: "Protection of educational rights",
     category: "Grievance",
     section: "Section 31",
     keywords: [
       "section 31",
-      "child rights",
       "educational rights",
-      "protection",
-      "SCPCR",
-      "REPA"
+      "child rights",
+      "monitoring",
+      "SCPCR"
     ],
     summary:
-      "Section 31 provides for protection of the child's right to education through the mechanisms specified under the Act and related framework.",
-    source: {
-      file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-      page: 14,
-      label: "RTE Act - Section 31"
-    }
+      "Section 31 provides for monitoring and protection of the child's right to education through the authorities specified in the Act.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 13,
+        label: "RTE Act, Section 31"
+      },
+      {
+        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        page: 1,
+        label: "14 February 2012 Advisory"
+      }
+    ]
   },
 
   {
     id: "RTE-043",
-    title: "Grievance Redressal for Educational Rights",
+    title: "Grievance redressal under Section 32",
     category: "Grievance",
     section: "Section 32",
     keywords: [
       "section 32",
       "grievance",
       "complaint",
-      "written complaint",
-      "local authority",
       "appeal",
-      "SCPCR"
+      "local authority",
+      "SCPCR",
+      "REPA"
     ],
     summary:
-      "The supplied 2012 advisory explains the procedure for complaints relating to children's educational rights, including written complaints, local-authority handling and escalation or appeal mechanisms.",
-    source: {
-      file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
-      page: 2,
-      label: "Sections 31 & 32 Advisory - 14 February 2012"
-    }
+      "The supplied materials describe a complaint and appeal framework for grievances concerning the child's right to education, including local authority handling and escalation arrangements.",
+    sourcePages: [
+      {
+        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        page: 13,
+        label: "RTE Act, Section 32"
+      },
+      {
+        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        page: 2,
+        label: "14 February 2012 Advisory"
+      }
+    ]
   },
 
-  // =========================================================
-  // TEACHER GRIEVANCE
-  // =========================================================
+
+  /* =========================
+     TEACHER GRIEVANCE
+     ========================= */
 
   {
     id: "RTE-044",
-    title: "Teacher Grievance Redressal",
+    title: "Teacher grievance redressal mechanism",
     category: "Teacher Grievance",
     section: "Rule 21A",
     keywords: [
       "Rule 21A",
       "teacher grievance",
-      "teacher complaint",
       "School Management Committee",
       "SMC",
       "2015 amendment"
     ],
     summary:
-      "The 2015 amendment rules insert Rule 21A concerning grievance redressal for teachers in the schools specified by the rule. The School Management Committee is identified as the first level in the mechanism.",
-    source: {
-      file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
-      page: 1,
-      label: "RTE Amendment Rules 2015 - Rule 21A"
-    }
+      "The 2015 amendment rules insert Rule 21A concerning grievance redressal for teachers. The School Management Committee is the first level for teacher grievances in the schools specified by the rule.",
+    sourcePages: [
+      {
+        file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2015"
+      }
+    ]
   },
 
-  // =========================================================
-  // 2024 EXAMINATION RULES
-  // =========================================================
+
+  /* =========================
+     2024 AMENDMENT
+     ========================= */
 
   {
     id: "RTE-045",
-    title: "2024 Rules: Examination and Holding Back in Certain Cases",
-    category: "Examination",
+    title: "Part VA: Examination and Holding Back in Certain Cases",
+    category: "2024 Amendment",
     section: "Part VA",
     keywords: [
-      "2024 rules",
-      "2024 amendment",
       "Part VA",
+      "2024",
       "examination",
       "holding back",
-      "GSR 777(E)"
+      "RTE amendment"
     ],
     summary:
-      "The 2024 amendment rules insert Part VA titled 'Examination and Holding Back in Certain Cases'.",
-    source: {
-      file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-      page: 1,
-      label: "RTE Amendment Rules 2024 - Part VA"
-    }
+      "The 2024 amendment reproduced in the supplied materials inserts Part VA titled 'Examination and Holding Back in Certain Cases'.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-046",
-    title: "2024 Rules: Examination in Class V and Class VIII",
-    category: "Examination",
-    section: "Part VA",
+    title: "Annual examination in Class V and Class VIII",
+    category: "2024 Amendment",
+    section: "Rule 16A",
     keywords: [
-      "class V examination",
-      "class VIII examination",
-      "class 5",
-      "class 8",
+      "Class V",
+      "Class VIII",
       "annual examination",
-      "2024 RTE rules"
+      "regular examination",
+      "2024"
     ],
     summary:
-      "Under the 2024 rules, a regular examination is to be held in Class V and Class VIII at the end of every academic year.",
-    source: {
-      file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-      page: 1,
-      label: "RTE Amendment Rules 2024 - Examination"
-    }
+      "A regular examination is to be held at the end of every academic year in Class V and Class VIII under the supplied 2024 amendment.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-047",
-    title: "2024 Rules: Re-examination Within Two Months",
-    category: "Examination",
-    section: "Part VA",
+    title: "Re-examination within two months",
+    category: "2024 Amendment",
+    section: "Rule 16A",
     keywords: [
       "re-examination",
       "two months",
+      "2 months",
       "additional instruction",
-      "promotion criteria",
-      "2024 amendment"
+      "promotion criteria"
     ],
     summary:
-      "If a child does not fulfil the notified promotion criteria, additional instruction and an opportunity for re-examination are to be provided within two months from declaration of the result.",
-    source: {
-      file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-      page: 1,
-      label: "RTE Amendment Rules 2024 - Re-examination"
-    }
+      "Additional instruction and an opportunity for re-examination shall be provided within two months from declaration of results where the child does not fulfil the notified promotion criteria.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 1,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-048",
-    title: "2024 Rules: Specialised Support During Holding Back",
-    category: "Examination",
-    section: "Part VA",
+    title: "Specialised support for children held back",
+    category: "2024 Amendment",
+    section: "Rule 16A",
     keywords: [
-      "holding back",
-      "learning gaps",
       "specialised inputs",
-      "class teacher",
+      "learning gaps",
+      "held back",
+      "teacher",
       "parents",
-      "2024 rules"
+      "2024"
     ],
     summary:
-      "Where a child is held back, the class teacher should guide the child and parents as necessary and provide specialised inputs after identifying learning gaps.",
-    source: {
-      file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-      page: 2,
-      label: "RTE Amendment Rules 2024 - Specialised Inputs"
-    }
+      "During holding back, the class teacher should guide the child and parents as necessary and provide specialised inputs after identifying learning gaps.",
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 2,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
   {
     id: "RTE-049",
-    title: "2024 Rules: Competency-Based Examination",
-    category: "Examination",
-    section: "Part VA",
+    title: "Competency-based examination and re-examination",
+    category: "2024 Amendment",
+    section: "Rule 16A",
     keywords: [
       "competency based",
       "competency-based",
       "holistic development",
-      "memorisation",
       "examination",
-      "2024 rules"
+      "memorisation",
+      "2024"
     ],
     summary:
       "The examination and re-examination are to be competency-based and aimed at holistic development rather than memorisation and procedural skills.",
-    source: {
-      file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-      page: 3,
-      label: "RTE Amendment Rules 2024 - Competency Based Assessment"
-    }
+    sourcePages: [
+      {
+        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        page: 3,
+        label: "RTE Amendment Rules, 2024"
+      }
+    ]
   },
 
-  // =========================================================
-  // RESIDENTIAL SCHOOLS
-  // =========================================================
+
+  /* =========================
+     RESIDENTIAL SCHOOLS
+     ========================= */
 
   {
     id: "RTE-050",
-    title: "RTE and Residential Schools",
+    title: "Application of Section 12(1)(c) to residential schools",
     category: "Residential Schools",
     section: "Section 12(1)(c)",
     keywords: [
       "residential school",
-      "boarding school",
-      "hostel",
-      "section 12(1)(c)",
+      "boarding",
       "day scholar",
-      "boarder",
-      "neighbourhood"
+      "section 12",
+      "12(1)(c)"
     ],
     summary:
-      "The supplied 13 July 2012 guideline discusses application of Section 12(1)(c) to residential schools and states that the neighbourhood criterion can apply to day scholars, rather than residential boarders, in the manner described in the guideline.",
-    source: {
-      file: "09_Guidelines_Residential_Schools_13-07-2012.pdf",
-      page: 1,
-      label: "Residential Schools Guideline - 13 July 2012"
-    }
+      "The supplied 13 July 2012 guideline addresses Section 12(1)(c) in relation to residential schools and distinguishes day scholars from residential boarders.",
+    sourcePages: [
+      {
+        file: "09_Guidelines_Residential_Schools_13-07-2012.pdf",
+        page: 1,
+        label: "13 July 2012 Residential School Guideline"
+      }
+    ]
   },
 
-  // =========================================================
-  // MINORITY INSTITUTIONS
-  // =========================================================
+
+  /* =========================
+     MINORITY INSTITUTIONS
+     ========================= */
 
   {
     id: "RTE-051",
-    title: "RTE Applicability to Minority Educational Institutions",
+    title: "RTE applicability to minority educational institutions",
     category: "Minority Institutions",
-    section: "RTE Applicability",
+    section: "Articles 29-30 context",
     keywords: [
       "minority institution",
       "minority school",
       "Article 29",
       "Article 30",
       "RTE applicability",
-      "minority educational institution"
+      "holding back"
     ],
     summary:
-      "The 27 August 2014 clarification records the Legal Affairs view concerning applicability of RTE provisions to minority educational institutions, subject to Articles 29 and 30 of the Constitution.",
-    source: {
-      file: "10_Clarification_Minority_Institutions_27-08-2014.pdf",
-      page: 1,
-      label: "Minority Institutions Clarification - 27 August 2014"
-    }
+      "The supplied 27 August 2014 clarification discusses applicability of RTE provisions to minority educational institutions in the context of Articles 29 and 30 of the Constitution.",
+    sourcePages: [
+      {
+        file: "10_Clarification_Minority_Institutions_27-08-2014.pdf",
+        page: 1,
+        label: "27 August 2014 Clarification"
+      }
+    ]
   },
 
-  // =========================================================
-  // SCHOOL RECOGNITION / FREE ENTITLEMENTS
-  // =========================================================
+
+  /* =========================
+     RECOGNITION / FREE ENTITLEMENTS
+     ========================= */
 
   {
     id: "RTE-052",
-    title: "Recognition Conditions for Schools",
+    title: "Conditions relating to school recognition",
     category: "School Recognition",
     section: "Model Rules",
     keywords: [
+      "recognition",
       "school recognition",
-      "recognition conditions",
-      "capitation fee",
+      "capitation",
       "screening",
-      "admission",
-      "model rules"
+      "recognition certificate",
+      "Model Rules"
     ],
     summary:
-      "The model rules contain the recognition procedure and conditions of recognition, including compliance with the RTE framework and restrictions concerning capitation fee and screening.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 5,
-      label: "Model Rules - Recognition"
-    }
+      "The Model Rules contain recognition procedures and conditions, including compliance with the RTE Act and rules, non-collection of capitation fee and no screening procedure.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 5,
+        label: "Model Rules"
+      },
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 6,
+        label: "Model Rules"
+      },
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 7,
+        label: "Model Rules"
+      }
+    ]
   },
 
   {
     id: "RTE-053",
-    title: "Free Textbooks, Writing Materials and Uniforms",
+    title: "Free textbooks, writing materials and uniforms",
     category: "Free Entitlements",
     section: "Model Rules",
     keywords: [
-      "free textbook",
+      "free textbooks",
       "textbooks",
       "writing materials",
       "uniform",
-      "free entitlement",
-      "school materials"
+      "free materials",
+      "children with disabilities"
     ],
     summary:
-      "The model rules provide for specified free entitlements, including textbooks, writing materials and uniforms for children covered by the relevant provisions.",
-    source: {
-      file: "02_Model_Rules_RTE_2009.pdf",
-      page: 15,
-      label: "Model Rules - Free Entitlements"
-    }
+      "The Model Rules provide for specified free materials, including textbooks, writing materials and uniforms, with special learning/support material for children with disabilities where applicable.",
+    sourcePages: [
+      {
+        file: "02_Model_Rules_RTE_2009.pdf",
+        page: 15,
+        label: "Model Rules"
+      }
+    ]
   },
 
-  // =========================================================
-  // REFERENCE / SOURCE NAVIGATION
-  // =========================================================
+
+  /* =========================
+     REFERENCE BOOK
+     ========================= */
 
   {
     id: "RTE-054",
     title: "RTE Rules Reference Book",
     category: "Reference",
-    section: "Source Index",
+    section: "Source-based compilation",
     keywords: [
       "reference book",
       "source",
       "RTE rules",
       "government documents",
       "gazette",
-      "source index"
+      "searchable"
     ],
     summary:
-      "Searchable source-based reference book containing the supplied RTE Act, model rules, guidelines, advisories, Gazette amendments and related clarification documents.",
-    source: {
-      file: "00_RTE_Rules_Reference_Book_September_2026.pdf",
-      page: 1,
-      label: "RTE Rules Reference Book"
-    }
+      "Source-based searchable compilation of the supplied Government, Gazette, guideline and clarification documents. The book does not independently verify amendments or government instructions not included in the supplied documents.",
+    sourcePages: [
+      {
+        file: "00_RTE_Rules_Reference_Book_September_2026.pdf",
+        page: 1,
+        label: "RTE Rules Reference Book"
+      }
+    ]
   }
 
 ];
 
 
-// =========================================================
-// HELPER FUNCTIONS
-// =========================================================
+/* =========================================================
+   HELPER FUNCTIONS
+   ========================================================= */
 
+/**
+ * Get one rule by ID.
+ */
 function getRuleById(id) {
-  return RTE_RULES.find(rule => rule.id === id);
+  return RTE_RULES.find(rule => rule.id === id) || null;
 }
 
+
+/**
+ * Get all rules belonging to a category.
+ */
 function getRulesByCategory(category) {
   return RTE_RULES.filter(rule => rule.category === category);
 }
 
-function searchRules(query) {
-  const q = String(query || "").trim().toLowerCase();
 
-  if (!q) return RTE_RULES;
+/**
+ * Search rules by:
+ * ID
+ * title
+ * category
+ * section
+ * keywords
+ * summary
+ */
+function searchRules(query) {
+
+  if (!query || !query.trim()) {
+    return RTE_RULES;
+  }
+
+  const q = query.toLowerCase().trim();
 
   return RTE_RULES.filter(rule => {
 
@@ -1301,20 +1494,61 @@ function searchRules(query) {
 }
 
 
-// =========================================================
-// PDF SOURCE URL
-// =========================================================
-
-const PDF_BASE = "pdf/";
-
+/**
+ * Return URL for the first source page.
+ *
+ * Example:
+ * pdf/01_RTE_Act_2009_Updated_26-07-2021.pdf#page=8
+ */
 function getSourceUrl(rule) {
 
-  if (!rule || !rule.source) {
+  if (!rule || !rule.sourcePages || !rule.sourcePages.length) {
     return "#";
   }
 
-  const file = encodeURIComponent(rule.source.file);
-  const page = Number(rule.source.page) || 1;
+  const source = rule.sourcePages[0];
 
-  return `${PDF_BASE}${file}#page=${page}`;
+  return (
+    PDF_BASE +
+    encodeURIComponent(source.file) +
+    "#page=" +
+    source.page
+  );
+}
+
+
+/**
+ * Return all source links for a rule.
+ *
+ * Useful when one rule is supported by multiple documents.
+ */
+function getSourceLinks(rule) {
+
+  if (!rule || !rule.sourcePages) {
+    return [];
+  }
+
+  return rule.sourcePages.map(source => ({
+    label: source.label,
+    file: source.file,
+    page: source.page,
+    url:
+      PDF_BASE +
+      encodeURIComponent(source.file) +
+      "#page=" +
+      source.page
+  }));
+}
+
+
+/**
+ * Get all available categories.
+ */
+function getCategories() {
+
+  return [
+    ...new Set(
+      RTE_RULES.map(rule => rule.category)
+    )
+  ].sort();
 }
