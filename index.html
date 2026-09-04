@@ -1,711 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RTE 2009 Rules Book</title>
+  <title>RTE 2009 Rules Book</title>
 
-<style>
+  <style>
     * {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f5f7fb;
-        color: #172033;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
     }
 
     header {
-        background: #182848;
-        color: white;
-        padding: 28px 20px;
+      background: #111827;
+      color: white;
+      padding: 28px 20px;
     }
 
     .header-inner {
-        max-width: 1100px;
-        margin: auto;
+      max-width: 1100px;
+      margin: auto;
     }
 
     h1 {
-        margin: 0 0 8px;
-        font-size: 30px;
+      margin: 0 0 8px;
+      font-size: 30px;
     }
 
     .subtitle {
-        margin: 0;
-        opacity: 0.85;
-        font-size: 15px;
+      margin: 0;
+      color: #d1d5db;
+      font-size: 15px;
     }
 
     .container {
-        max-width: 1100px;
-        margin: 25px auto;
-        padding: 0 16px;
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 0 15px;
     }
 
     .search-box {
-        background: white;
-        padding: 18px;
-        border-radius: 12px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        margin-bottom: 20px;
+      background: white;
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
     }
 
     #searchInput {
-        width: 100%;
-        padding: 15px 17px;
-        font-size: 16px;
-        border: 1px solid #ccd3df;
-        border-radius: 9px;
-        outline: none;
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
     }
 
     #searchInput:focus {
-        border-color: #3857d6;
+      border-color: #2563eb;
     }
 
     .filters {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
     }
 
     .filter-btn {
-        border: 1px solid #ccd3df;
-        background: white;
-        padding: 8px 13px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 13px;
+      border: 1px solid #d1d5db;
+      background: white;
+      padding: 8px 13px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .filter-btn:hover {
+      background: #f3f4f6;
     }
 
     .filter-btn.active {
-        background: #182848;
-        color: white;
-        border-color: #182848;
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
     }
 
     .result-info {
-        margin: 15px 2px;
-        color: #657083;
-        font-size: 14px;
+      margin: 18px 0 12px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    #rulesContainer {
+      display: grid;
+      gap: 15px;
     }
 
     .rule-card {
-        background: white;
-        border-radius: 12px;
-        padding: 20px;
-        margin-bottom: 14px;
-        box-shadow: 0 2px 9px rgba(0,0,0,0.07);
-        border-left: 4px solid #3857d6;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      border-left: 4px solid #2563eb;
     }
 
-    .category {
-        display: inline-block;
-        background: #eef1ff;
-        color: #3046aa;
-        padding: 5px 9px;
-        border-radius: 5px;
-        font-size: 12px;
-        font-weight: bold;
-        margin-bottom: 10px;
+    .rule-id {
+      font-size: 12px;
+      font-weight: bold;
+      color: #2563eb;
+      margin-bottom: 6px;
     }
 
-    .rule-card h2 {
-        margin: 3px 0 9px;
-        font-size: 20px;
+    .rule-title {
+      font-size: 19px;
+      font-weight: bold;
+      margin-bottom: 9px;
+      color: #111827;
     }
 
-    .rule-card p {
-        line-height: 1.6;
-        margin: 7px 0;
-        color: #424b5a;
+    .rule-section {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-bottom: 10px;
     }
 
-    .source {
-        margin-top: 14px;
-        padding-top: 13px;
-        border-top: 1px solid #edf0f5;
-        font-size: 13px;
-        color: #667085;
+    .rule-summary {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 5px 0 14px;
     }
 
-    .source strong {
-        color: #273043;
+    .keywords {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 14px;
     }
 
-    .source-btn {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 9px 14px;
-        background: #182848;
-        color: white;
-        text-decoration: none;
-        border-radius: 7px;
-        font-size: 13px;
-        font-weight: bold;
+    .source-box {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 12px;
+      font-size: 13px;
     }
 
-    .source-btn:hover {
-        background: #2b4275;
+    .source-label {
+      color: #6b7280;
+      margin-bottom: 7px;
+    }
+
+    .source-link {
+      display: inline-block;
+      text-decoration: none;
+      background: #111827;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .source-link:hover {
+      background: #374151;
     }
 
     .no-results {
-        background: white;
-        padding: 35px;
-        text-align: center;
-        border-radius: 12px;
-        color: #687386;
+      background: white;
+      padding: 35px 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: #6b7280;
     }
 
     footer {
-        text-align: center;
-        padding: 30px 15px;
-        color: #7b8494;
-        font-size: 13px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px 15px;
+      color: #6b7280;
+      font-size: 12px;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
-        h1 {
-            font-size: 24px;
-        }
+      h1 {
+        font-size: 24px;
+      }
 
-        .rule-card {
-            padding: 16px;
-        }
+      .rule-card {
+        padding: 16px;
+      }
 
-        .rule-card h2 {
-            font-size: 18px;
-        }
+      .rule-title {
+        font-size: 17px;
+      }
+
+      .rule-summary {
+        font-size: 14px;
+      }
     }
-</style>
+  </style>
 </head>
 
 <body>
 
 <header>
-    <div class="header-inner">
-        <h1>RTE 2009 Rules Book</h1>
-        <p class="subtitle">
-            Searchable, source-linked reference to the supplied RTE Act, Rules,
-            Guidelines and Notifications
-        </p>
-    </div>
+  <div class="header-inner">
+    <h1>RTE 2009 Rules Book</h1>
+    <p class="subtitle">
+      Searchable reference of the Right to Education Act, Rules, Guidelines and Clarifications
+    </p>
+  </div>
 </header>
 
-<div class="container">
 
-    <div class="search-box">
+<main class="container">
 
-        <input
-            type="search"
-            id="searchInput"
-            placeholder="Search rules, sections, admission, age proof, 25%, screening..."
-            autocomplete="off"
-        >
+  <section class="search-box">
 
-        <div class="filters" id="filters"></div>
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Search rules, sections, topics, keywords..."
+      autocomplete="off"
+    >
 
-    </div>
+    <div class="filters" id="categoryFilters"></div>
 
-    <div class="result-info" id="resultInfo"></div>
+  </section>
 
-    <div id="results"></div>
 
-</div>
+  <div class="result-info" id="resultInfo"></div>
+
+  <section id="rulesContainer"></section>
+
+</main>
+
 
 <footer>
-    RTE Rules Book • Source-linked reference
+  RTE Rules Book • Compiled reference documents • Source pages are linked to the corresponding PDF.
 </footer>
+
+
+<!-- IMPORTANT:
+     rules.js must be in the same folder as index.html
+-->
+<script src="rules.js"></script>
 
 
 <script>
 
-/* =========================================================
-   SOURCE DOCUMENTS
-   ========================================================= */
-
-const PDF_BASE = "pdf/";
-
-const rules = [
-
-    {
-        id: "rte-03",
-        category: "Right to Education",
-        title: "Right of a child to free and compulsory education",
-        section: "Section 3",
-        keywords: "section 3 age six fourteen 6 14 free compulsory education neighbourhood school elementary education",
-        summary:
-            "The RTE Act provides the right of a child aged six to fourteen years to free and compulsory education in a neighbourhood school until completion of elementary education.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 3
-    },
-
-    {
-        id: "rte-04",
-        category: "Admission",
-        title: "Special provision for children not admitted to school",
-        section: "Section 4",
-        keywords: "section 4 age appropriate admission special training not admitted elementary education",
-        summary:
-            "Section 4 deals with children who were not admitted to school or who did not complete elementary education and provides for age-appropriate admission with special training.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 4
-    },
-
-    {
-        id: "rte-12",
-        category: "25% Admission",
-        title: "School responsibility for free and compulsory education",
-        section: "Section 12(1)(c)",
-        keywords: "section 12 1 c 25 percent 25% weaker section disadvantaged group class I admission",
-        summary:
-            "Section 12 sets out the extent of school responsibility for free and compulsory education, including the provision concerning children belonging to weaker sections and disadvantaged groups.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 7
-    },
-
-    {
-        id: "rte-13",
-        category: "Admission",
-        title: "No capitation fee and no screening procedure",
-        section: "Section 13",
-        keywords: "section 13 capitation fee screening test interview admission selection",
-        summary:
-            "The Act prohibits collection of capitation fee and subjects admission to the prohibition on screening procedures.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 8
-    },
-
-    {
-        id: "rte-14",
-        category: "Age Proof",
-        title: "Proof of age for admission",
-        section: "Section 14",
-        keywords: "section 14 age proof birth certificate admission age certificate document ANM anganwadi declaration",
-        summary:
-            "Age for admission is determined on the basis of the birth certificate or such other document as may be prescribed. A child cannot be denied admission for lack of age proof.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 9
-    },
-
-    {
-        id: "rte-15",
-        category: "Admission",
-        title: "No denial of admission",
-        section: "Section 15",
-        keywords: "section 15 admission academic year late admission extended period denial admission",
-        summary:
-            "A child is to be admitted at the commencement of the academic year or within the prescribed extended period, and admission cannot be denied when it is sought after that period.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 9
-    },
-
-    {
-        id: "adm-2010",
-        category: "25% Admission",
-        title: "Admission process for Section 12(1)(c) and Section 13",
-        section: "Section 12(1)(c) + Section 13(1)",
-        keywords: "25% admission random selection weaker section disadvantaged group screening test interview admission policy",
-        summary:
-            "The 23 November 2010 admission guideline describes a non-discriminatory, rational and transparent admission process. For the 25% pool, random selection is prescribed, while testing and interviews are treated as screening.",
-        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-        page: 1
-    },
-
-    {
-        id: "adm-preprimary",
-        category: "25% Admission",
-        title: "Pre-primary admission and the Section 12(1)(c) provision",
-        section: "Section 12(1)(c)",
-        keywords: "pre primary pre-primary class I 25 percent admission section 12 1 c",
-        summary:
-            "The supplied admission guideline addresses the situation where a school admits children at the pre-primary level and explains how the admission requirement applies at that level.",
-        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-        page: 1
-    },
-
-    {
-        id: "adm-screening",
-        category: "Admission",
-        title: "Screening, tests and interviews",
-        section: "Section 13(1)",
-        keywords: "screening admission test entrance test interview child parent selection prohibited",
-        summary:
-            "The supplied admission guideline treats testing and interviews for selection as screening and states that such screening should not be used.",
-        pdf: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
-        page: 2
-    },
-
-    {
-        id: "ageproof-clarification",
-        category: "Age Proof",
-        title: "Age proof cannot be a condition for admission",
-        section: "Section 14",
-        keywords: "age proof birth certificate ANM anganwadi parent guardian admission cannot deny",
-        summary:
-            "The clarification explains that other documents may be used for determining age and that the right to education cannot be denied merely because age proof is unavailable.",
-        pdf: "13_RTE_Act_Clarification_on_Provisions.pdf",
-        page: 1
-    },
-
-    {
-        id: "late-admission",
-        category: "Admission",
-        title: "Admission after the normal admission period",
-        section: "Section 15",
-        keywords: "late admission academic year migration displacement illness extended period admission",
-        summary:
-            "The clarification discusses the need for flexibility for children in difficult circumstances and notes the provisions concerning admission after the normal admission period.",
-        pdf: "13_RTE_Act_Clarification_on_Provisions.pdf",
-        page: 1
-    },
-
-    {
-        id: "special-training",
-        category: "Special Training",
-        title: "Special training for age-appropriate admission",
-        section: "Section 4 + Model Rule 3",
-        keywords: "special training age appropriate admission rule 3 three months two years learning material",
-        summary:
-            "The Model Rules provide for special training for children requiring it, including children entering an age-appropriate class. The supplied reference material states a minimum period of three months, extendable on assessment up to two years.",
-        pdf: "02_Model_Rules_RTE_2009.pdf",
-        page: 1
-    },
-
-    {
-        id: "special-training-integration",
-        category: "Special Training",
-        title: "Continued support after special training",
-        section: "Special Training",
-        keywords: "special training integration emotional academic attention age appropriate class",
-        summary:
-            "After induction into the age-appropriate class, the supplied material states that the child should continue to receive special attention to support academic and emotional integration.",
-        pdf: "02_Model_Rules_RTE_2009.pdf",
-        page: 2
-    },
-
-    {
-        id: "neighbourhood",
-        category: "Neighbourhood School",
-        title: "Neighbourhood school distance",
-        section: "Model Rule 4",
-        keywords: "neighbourhood school distance 1 km one kilometre classes I V 3 km VI VIII",
-        summary:
-            "The Model Rules specify a neighbourhood school within one kilometre walking distance for Classes I–V and three kilometres for Classes VI–VIII, with provisions for difficult terrain and other access issues.",
-        pdf: "02_Model_Rules_RTE_2009.pdf",
-        page: 2
-    },
-
-    {
-        id: "kvs-neighbourhood",
-        category: "Neighbourhood School",
-        title: "Kendriya Vidyalaya neighbourhood radius",
-        section: "Section 12(1)(c)",
-        keywords: "KVS Kendriya Vidyalaya neighbourhood 5 km 8 km metropolitan district headquarters",
-        summary:
-            "The supplied 2011 KVS communication specifies a defined neighbourhood radius of 5 km for KVs in metropolitan towns and district headquarters and 8 km for other KVs.",
-        pdf: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf",
-        page: 1
-    },
-
-    {
-        id: "teacher-qualification",
-        category: "Teachers",
-        title: "Minimum teacher qualification",
-        section: "Section 23",
-        keywords: "teacher qualification section 23 NCTE academic authority classes I VIII",
-        summary:
-            "Section 23 establishes the minimum qualification framework for teachers and provides for the authorised academic authority and specified relaxation mechanism.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 11
-    },
-
-    {
-        id: "teacher-relaxation",
-        category: "Teachers",
-        title: "Relaxation of teacher qualification",
-        section: "Section 23(2)",
-        keywords: "section 23 2 relaxation teacher qualification state five years TET",
-        summary:
-            "The 8 November 2010 guideline explains the information and conditions associated with a State seeking relaxation under Section 23(2).",
-        pdf: "03_Guidelines_Section_23_2_08-11-2010.pdf",
-        page: 1
-    },
-
-    {
-        id: "curriculum",
-        category: "Curriculum",
-        title: "Curriculum and evaluation",
-        section: "Section 29",
-        keywords: "section 29 curriculum evaluation academic authority child centred learning",
-        summary:
-            "Section 29 concerns curriculum and evaluation for elementary education, with the supplied 2012 advisory discussing child-centred curriculum principles.",
-        pdf: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
-        page: 13
-    },
-
-    {
-        id: "grievance",
-        category: "Grievance",
-        title: "Protection of educational rights and grievance redressal",
-        section: "Sections 31–32",
-        keywords: "section 31 section 32 grievance complaint child educational rights SCPCR REPA",
-        summary:
-            "The supplied 2012 advisory explains the framework for complaints concerning children's educational rights and the relevant escalation and appeal mechanisms.",
-        pdf: "08_Advisory_Sections_31_32_14-02-2012.pdf",
-        page: 2
-    },
-
-    {
-        id: "teacher-grievance",
-        category: "Grievance",
-        title: "Teacher grievance redressal",
-        section: "Rule 21A",
-        keywords: "rule 21A teacher grievance school management committee complaint",
-        summary:
-            "The 2015 Amendment Rules insert Rule 21A concerning grievance redressal for teachers in the schools covered by the rule.",
-        pdf: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
-        page: 1
-    },
-
-    {
-        id: "examination-2024",
-        category: "Examination",
-        title: "Examination and holding back provisions",
-        section: "Rule 16A",
-        keywords: "2024 amendment examination holding back class 5 class 8 re examination additional instruction",
-        summary:
-            "The supplied 2024 Amendment Rules insert provisions concerning examinations and holding back in certain cases.",
-        pdf: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
-        page: 1
-    },
-
-    {
-        id: "residential",
-        category: "Residential Schools",
-        title: "Section 12(1)(c) and residential schools",
-        section: "Section 12(1)(c)",
-        keywords: "residential school boarding day scholars 25% section 12 1 c neighbourhood",
-        summary:
-            "The supplied 2012 residential-school guideline addresses the application of Section 12(1)(c) to residential schools and distinguishes day scholars from residential boarders.",
-        pdf: "09_Guidelines_Residential_Schools_13-07-2012.pdf",
-        page: 1
-    },
-
-    {
-        id: "minority",
-        category: "Minority Institutions",
-        title: "RTE applicability to minority educational institutions",
-        section: "Articles 29–30 context",
-        keywords: "minority institution article 29 30 RTE applicability holding back corporal punishment",
-        summary:
-            "The supplied 2014 clarification records the Department of Legal Affairs view concerning applicability of RTE provisions to minority educational institutions in the context of Articles 29 and 30.",
-        pdf: "10_Clarification_Minority_Institutions_27-08-2014.pdf",
-        page: 1
-    }
-
-];
+  let currentCategory = "All";
+  let currentQuery = "";
 
 
-/* =========================================================
-   UI
-   ========================================================= */
+  /* -----------------------------------------
+     CATEGORY FILTERS
+  ----------------------------------------- */
 
-const searchInput = document.getElementById("searchInput");
-const resultsDiv = document.getElementById("results");
-const resultInfo = document.getElementById("resultInfo");
-const filtersDiv = document.getElementById("filters");
+  function createCategoryFilters() {
 
-let activeCategory = "All";
+    const filterContainer =
+      document.getElementById("categoryFilters");
 
+    const categories = [
+      "All",
+      ...new Set(
+        RTE_RULES.map(rule => rule.category)
+      )
+    ];
 
-/* =========================================================
-   CREATE FILTERS
-   ========================================================= */
+    filterContainer.innerHTML = "";
 
-const categories = [
-    "All",
-    ...new Set(rules.map(rule => rule.category))
-];
+    categories.forEach(category => {
 
-categories.forEach(category => {
+      const button = document.createElement("button");
 
-    const button = document.createElement("button");
+      button.className =
+        "filter-btn" +
+        (category === currentCategory ? " active" : "");
 
-    button.className =
-        "filter-btn" + (category === "All" ? " active" : "");
+      button.textContent = category;
 
-    button.textContent = category;
+      button.addEventListener("click", () => {
 
-    button.addEventListener("click", () => {
-
-        activeCategory = category;
+        currentCategory = category;
 
         document
-            .querySelectorAll(".filter-btn")
-            .forEach(btn => btn.classList.remove("active"));
+          .querySelectorAll(".filter-btn")
+          .forEach(btn => btn.classList.remove("active"));
 
         button.classList.add("active");
 
-        renderResults();
+        renderRules();
+
+      });
+
+      filterContainer.appendChild(button);
 
     });
 
-    filtersDiv.appendChild(button);
-
-});
+  }
 
 
-/* =========================================================
-   SEARCH
-   ========================================================= */
+  /* -----------------------------------------
+     SEARCH
+  ----------------------------------------- */
 
-searchInput.addEventListener("input", renderResults);
+  function performSearch() {
+
+    currentQuery =
+      document.getElementById("searchInput").value.trim();
+
+    renderRules();
+
+  }
 
 
-/* =========================================================
-   RENDER RESULTS
-   ========================================================= */
+  /* -----------------------------------------
+     FILTER + SEARCH
+  ----------------------------------------- */
 
-function renderResults() {
+  function getFilteredRules() {
 
-    const query =
-        searchInput.value
-            .trim()
-            .toLowerCase();
+    let rules = [...RTE_RULES];
 
-    const filtered = rules.filter(rule => {
 
-        const categoryMatch =
-            activeCategory === "All" ||
-            rule.category === activeCategory;
+    /* Category */
+
+    if (currentCategory !== "All") {
+
+      rules = rules.filter(
+        rule => rule.category === currentCategory
+      );
+
+    }
+
+
+    /* Search */
+
+    if (currentQuery !== "") {
+
+      const searchText =
+        currentQuery.toLowerCase();
+
+      rules = rules.filter(rule => {
 
         const searchableText = [
-            rule.title,
-            rule.section,
-            rule.category,
-            rule.keywords,
-            rule.summary
+
+          rule.id,
+
+          rule.title,
+
+          rule.category,
+
+          rule.section,
+
+          rule.summary,
+
+          ...(rule.keywords || [])
+
         ]
         .join(" ")
         .toLowerCase();
 
-        const searchMatch =
-            query === "" ||
-            searchableText.includes(query);
+        return searchableText.includes(searchText);
 
-        return categoryMatch && searchMatch;
+      });
 
-    });
-
-
-    resultInfo.textContent =
-        `${filtered.length} rule${filtered.length !== 1 ? "s" : ""} found`;
-
-
-    if (filtered.length === 0) {
-
-        resultsDiv.innerHTML = `
-            <div class="no-results">
-                <h3>No matching rule found</h3>
-                <p>Try another keyword, section number or topic.</p>
-            </div>
-        `;
-
-        return;
     }
 
 
-    resultsDiv.innerHTML =
-        filtered.map(createRuleCard).join("");
+    return rules;
 
-}
-
-
-/* =========================================================
-   CREATE RULE CARD
-   ========================================================= */
-
-function createRuleCard(rule) {
-
-    const pdfUrl =
-        PDF_BASE +
-        encodeURIComponent(rule.pdf) +
-        `#page=${rule.page}`;
-
-    return `
-        <article class="rule-card">
-
-            <span class="category">
-                ${escapeHTML(rule.category)}
-            </span>
-
-            <h2>
-                ${escapeHTML(rule.title)}
-            </h2>
-
-            <p>
-                <strong>${escapeHTML(rule.section)}</strong>
-            </p>
-
-            <p>
-                ${escapeHTML(rule.summary)}
-            </p>
-
-            <div class="source">
-
-                <div>
-                    <strong>Source:</strong>
-                    ${escapeHTML(rule.pdf)}
-                </div>
-
-                <div>
-                    <strong>PDF Page:</strong>
-                    ${rule.page}
-                </div>
-
-                <a
-                    class="source-btn"
-                    href="${pdfUrl}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    📄 View Source Page
-                </a>
-
-            </div>
-
-        </article>
-    `;
-}
+  }
 
 
-/* =========================================================
-   BASIC HTML ESCAPE
-   ========================================================= */
+  /* -----------------------------------------
+     ESCAPE HTML
+     Prevents accidental HTML injection
+  ----------------------------------------- */
 
-function escapeHTML(value) {
+  function escapeHTML(value) {
+
+    if (value === null || value === undefined) {
+      return "";
+    }
 
     return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
 
-}
+  }
 
 
-/* =========================================================
-   INITIAL LOAD
-   ========================================================= */
+  /* -----------------------------------------
+     CREATE RULE CARD
+  ----------------------------------------- */
 
-renderResults();
+  function createRuleCard(rule) {
+
+    const card =
+      document.createElement("article");
+
+    card.className = "rule-card";
+
+
+    const sourceUrl =
+      getSourceUrl(rule);
+
+
+    const keywords =
+      Array.isArray(rule.keywords)
+        ? rule.keywords.join(", ")
+        : "";
+
+
+    card.innerHTML = `
+
+      <div class="rule-id">
+        ${escapeHTML(rule.id)}
+      </div>
+
+      <div class="rule-title">
+        ${escapeHTML(rule.title)}
+      </div>
+
+      <div class="rule-section">
+        ${escapeHTML(rule.section || rule.category)}
+      </div>
+
+      <div class="rule-summary">
+        ${escapeHTML(rule.summary)}
+      </div>
+
+      ${
+        keywords
+          ? `
+            <div class="keywords">
+              <strong>Keywords:</strong>
+              ${escapeHTML(keywords)}
+            </div>
+          `
+          : ""
+      }
+
+      <div class="source-box">
+
+        <div class="source-label">
+          <strong>Source:</strong>
+          ${escapeHTML(rule.source.label)}
+        </div>
+
+        <a
+          class="source-link"
+          href="${sourceUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📄 Open Source PDF — Page ${escapeHTML(rule.source.page)}
+        </a>
+
+      </div>
+
+    `;
+
+
+    return card;
+
+  }
+
+
+  /* -----------------------------------------
+     RENDER RULES
+  ----------------------------------------- */
+
+  function renderRules() {
+
+    const container =
+      document.getElementById("rulesContainer");
+
+    const resultInfo =
+      document.getElementById("resultInfo");
+
+
+    const rules =
+      getFilteredRules();
+
+
+    container.innerHTML = "";
+
+
+    resultInfo.textContent =
+      `${rules.length} rule${rules.length === 1 ? "" : "s"} found`;
+
+
+    if (rules.length === 0) {
+
+      container.innerHTML = `
+
+        <div class="no-results">
+
+          <h3>No matching rule found</h3>
+
+          <p>
+            Try another keyword, section number or topic.
+          </p>
+
+        </div>
+
+      `;
+
+      return;
+
+    }
+
+
+    rules.forEach(rule => {
+
+      container.appendChild(
+        createRuleCard(rule)
+      );
+
+    });
+
+  }
+
+
+  /* -----------------------------------------
+     SEARCH INPUT EVENT
+  ----------------------------------------- */
+
+  document
+    .getElementById("searchInput")
+    .addEventListener("input", performSearch);
+
+
+  /* -----------------------------------------
+     INITIALIZE
+  ----------------------------------------- */
+
+  createCategoryFilters();
+
+  renderRules();
 
 </script>
 
