@@ -14,7 +14,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
+      background: #f4f6f8;
       color: #1f2937;
     }
 
@@ -31,13 +31,13 @@
 
     h1 {
       margin: 0 0 8px;
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .subtitle {
       margin: 0;
       color: #d1d5db;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .container {
@@ -50,16 +50,16 @@
       background: white;
       padding: 18px;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 18px;
     }
 
     #searchInput {
       width: 100%;
-      padding: 14px 16px;
+      padding: 13px 15px;
       border: 1px solid #d1d5db;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 15px;
       outline: none;
     }
 
@@ -77,7 +77,7 @@
     .filter-btn {
       border: 1px solid #d1d5db;
       background: white;
-      padding: 8px 13px;
+      padding: 7px 12px;
       border-radius: 20px;
       cursor: pointer;
       font-size: 13px;
@@ -94,105 +94,122 @@
     }
 
     .result-info {
-      margin: 18px 0 12px;
-      font-size: 14px;
+      margin: 15px 0;
       color: #6b7280;
+      font-size: 14px;
     }
 
-    #rulesContainer {
+    .rules {
       display: grid;
-      gap: 15px;
+      gap: 16px;
     }
 
     .rule-card {
       background: white;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      border-left: 4px solid #2563eb;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     .rule-id {
-      font-size: 12px;
-      font-weight: bold;
-      color: #2563eb;
-      margin-bottom: 6px;
-    }
-
-    .rule-title {
-      font-size: 19px;
-      font-weight: bold;
-      margin-bottom: 9px;
-      color: #111827;
-    }
-
-    .rule-section {
       display: inline-block;
       background: #eef2ff;
       color: #3730a3;
       padding: 4px 8px;
       border-radius: 5px;
       font-size: 12px;
-      margin-bottom: 10px;
+      font-weight: bold;
+      margin-bottom: 8px;
     }
 
-    .rule-summary {
-      font-size: 15px;
+    .rule-title {
+      margin: 0 0 10px;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+
+    .meta span {
+      background: #f3f4f6;
+      color: #4b5563;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    .summary {
       line-height: 1.6;
-      margin: 5px 0 14px;
+      font-size: 14px;
+      color: #374151;
     }
 
     .keywords {
+      margin-top: 12px;
       font-size: 12px;
       color: #6b7280;
-      margin-bottom: 14px;
     }
 
-    .source-box {
+    .sources {
+      margin-top: 18px;
+      padding-top: 14px;
       border-top: 1px solid #e5e7eb;
-      padding-top: 12px;
-      font-size: 13px;
     }
 
-    .source-label {
-      color: #6b7280;
-      margin-bottom: 7px;
+    .source-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #374151;
     }
 
     .source-link {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
       text-decoration: none;
-      background: #111827;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
+      padding: 9px 11px;
+      margin-top: 7px;
+      border-radius: 7px;
+      background: #f8fafc;
+      color: #2563eb;
       font-size: 13px;
     }
 
     .source-link:hover {
-      background: #374151;
+      background: #eef2ff;
+    }
+
+    .source-link span {
+      color: #6b7280;
+      font-size: 12px;
+      white-space: nowrap;
     }
 
     .no-results {
       background: white;
-      padding: 35px 20px;
-      border-radius: 12px;
+      padding: 30px;
       text-align: center;
+      border-radius: 12px;
       color: #6b7280;
     }
 
     footer {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px 15px;
-      color: #6b7280;
-      font-size: 12px;
       text-align: center;
+      color: #9ca3af;
+      font-size: 12px;
+      padding: 30px 15px;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 24px;
+        font-size: 23px;
       }
 
       .rule-card {
@@ -203,8 +220,9 @@
         font-size: 17px;
       }
 
-      .rule-summary {
-        font-size: 14px;
+      .source-link {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -216,181 +234,53 @@
   <div class="header-inner">
     <h1>RTE 2009 Rules Book</h1>
     <p class="subtitle">
-      Searchable reference of the Right to Education Act, Rules, Guidelines and Clarifications
+      Searchable reference of Right to Education rules, guidelines and amendments
     </p>
   </div>
 </header>
 
+<div class="container">
 
-<main class="container">
-
-  <section class="search-box">
+  <div class="search-box">
 
     <input
-      type="search"
+      type="text"
       id="searchInput"
-      placeholder="Search rules, sections, topics, keywords..."
+      placeholder="Search rules, sections, keywords..."
       autocomplete="off"
     >
 
-    <div class="filters" id="categoryFilters"></div>
+    <div class="filters" id="filters"></div>
 
-  </section>
-
+  </div>
 
   <div class="result-info" id="resultInfo"></div>
 
-  <section id="rulesContainer"></section>
+  <div class="rules" id="rulesContainer"></div>
 
-</main>
-
+</div>
 
 <footer>
-  RTE Rules Book • Compiled reference documents • Source pages are linked to the corresponding PDF.
+  RTE Rules Reference Book
 </footer>
 
-
-<!-- IMPORTANT:
-     rules.js must be in the same folder as index.html
--->
 <script src="rules.js"></script>
-
 
 <script>
 
   let currentCategory = "All";
-  let currentQuery = "";
+
+  const searchInput = document.getElementById("searchInput");
+  const filtersContainer = document.getElementById("filters");
+  const rulesContainer = document.getElementById("rulesContainer");
+  const resultInfo = document.getElementById("resultInfo");
 
 
-  /* -----------------------------------------
-     CATEGORY FILTERS
-  ----------------------------------------- */
-
-  function createCategoryFilters() {
-
-    const filterContainer =
-      document.getElementById("categoryFilters");
-
-    const categories = [
-      "All",
-      ...new Set(
-        RTE_RULES.map(rule => rule.category)
-      )
-    ];
-
-    filterContainer.innerHTML = "";
-
-    categories.forEach(category => {
-
-      const button = document.createElement("button");
-
-      button.className =
-        "filter-btn" +
-        (category === currentCategory ? " active" : "");
-
-      button.textContent = category;
-
-      button.addEventListener("click", () => {
-
-        currentCategory = category;
-
-        document
-          .querySelectorAll(".filter-btn")
-          .forEach(btn => btn.classList.remove("active"));
-
-        button.classList.add("active");
-
-        renderRules();
-
-      });
-
-      filterContainer.appendChild(button);
-
-    });
-
-  }
-
-
-  /* -----------------------------------------
-     SEARCH
-  ----------------------------------------- */
-
-  function performSearch() {
-
-    currentQuery =
-      document.getElementById("searchInput").value.trim();
-
-    renderRules();
-
-  }
-
-
-  /* -----------------------------------------
-     FILTER + SEARCH
-  ----------------------------------------- */
-
-  function getFilteredRules() {
-
-    let rules = [...RTE_RULES];
-
-
-    /* Category */
-
-    if (currentCategory !== "All") {
-
-      rules = rules.filter(
-        rule => rule.category === currentCategory
-      );
-
-    }
-
-
-    /* Search */
-
-    if (currentQuery !== "") {
-
-      const searchText =
-        currentQuery.toLowerCase();
-
-      rules = rules.filter(rule => {
-
-        const searchableText = [
-
-          rule.id,
-
-          rule.title,
-
-          rule.category,
-
-          rule.section,
-
-          rule.summary,
-
-          ...(rule.keywords || [])
-
-        ]
-        .join(" ")
-        .toLowerCase();
-
-        return searchableText.includes(searchText);
-
-      });
-
-    }
-
-
-    return rules;
-
-  }
-
-
-  /* -----------------------------------------
-     ESCAPE HTML
-     Prevents accidental HTML injection
-  ----------------------------------------- */
-
+  /*
+   * Escape HTML characters.
+   * This prevents rule text from accidentally being interpreted as HTML.
+   */
   function escapeHTML(value) {
-
     if (value === null || value === undefined) {
       return "";
     }
@@ -401,158 +291,294 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
-
   }
 
 
-  /* -----------------------------------------
-     CREATE RULE CARD
-  ----------------------------------------- */
+  /*
+   * Create category filter buttons.
+   */
+  function renderFilters() {
 
-  function createRuleCard(rule) {
+    const categories = getCategories();
 
-    const card =
-      document.createElement("article");
+    filtersContainer.innerHTML = "";
 
-    card.className = "rule-card";
+    const allButton = document.createElement("button");
 
+    allButton.className =
+      "filter-btn " + (currentCategory === "All" ? "active" : "");
 
-    const sourceUrl =
-      getSourceUrl(rule);
+    allButton.textContent = "All";
 
+    allButton.onclick = function() {
+      currentCategory = "All";
+      renderFilters();
+      renderRules();
+    };
 
-    const keywords =
-      Array.isArray(rule.keywords)
-        ? rule.keywords.join(", ")
-        : "";
-
-
-    card.innerHTML = `
-
-      <div class="rule-id">
-        ${escapeHTML(rule.id)}
-      </div>
-
-      <div class="rule-title">
-        ${escapeHTML(rule.title)}
-      </div>
-
-      <div class="rule-section">
-        ${escapeHTML(rule.section || rule.category)}
-      </div>
-
-      <div class="rule-summary">
-        ${escapeHTML(rule.summary)}
-      </div>
-
-      ${
-        keywords
-          ? `
-            <div class="keywords">
-              <strong>Keywords:</strong>
-              ${escapeHTML(keywords)}
-            </div>
-          `
-          : ""
-      }
-
-      <div class="source-box">
-
-        <div class="source-label">
-          <strong>Source:</strong>
-          ${escapeHTML(rule.source.label)}
-        </div>
-
-        <a
-          class="source-link"
-          href="${sourceUrl}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📄 Open Source PDF — Page ${escapeHTML(rule.source.page)}
-        </a>
-
-      </div>
-
-    `;
+    filtersContainer.appendChild(allButton);
 
 
-    return card;
+    categories.forEach(function(category) {
 
-  }
+      const button = document.createElement("button");
 
+      button.className =
+        "filter-btn " +
+        (currentCategory === category ? "active" : "");
 
-  /* -----------------------------------------
-     RENDER RULES
-  ----------------------------------------- */
+      button.textContent = category;
 
-  function renderRules() {
+      button.onclick = function() {
+        currentCategory = category;
+        renderFilters();
+        renderRules();
+      };
 
-    const container =
-      document.getElementById("rulesContainer");
-
-    const resultInfo =
-      document.getElementById("resultInfo");
-
-
-    const rules =
-      getFilteredRules();
-
-
-    container.innerHTML = "";
-
-
-    resultInfo.textContent =
-      `${rules.length} rule${rules.length === 1 ? "" : "s"} found`;
-
-
-    if (rules.length === 0) {
-
-      container.innerHTML = `
-
-        <div class="no-results">
-
-          <h3>No matching rule found</h3>
-
-          <p>
-            Try another keyword, section number or topic.
-          </p>
-
-        </div>
-
-      `;
-
-      return;
-
-    }
-
-
-    rules.forEach(rule => {
-
-      container.appendChild(
-        createRuleCard(rule)
-      );
+      filtersContainer.appendChild(button);
 
     });
 
   }
 
 
-  /* -----------------------------------------
-     SEARCH INPUT EVENT
-  ----------------------------------------- */
+  /*
+   * Search + category filtering.
+   */
+  function getFilteredRules() {
 
-  document
-    .getElementById("searchInput")
-    .addEventListener("input", performSearch);
+    const query = searchInput.value.trim();
+
+    let rules = RTE_RULES.slice();
 
 
-  /* -----------------------------------------
-     INITIALIZE
-  ----------------------------------------- */
+    if (currentCategory !== "All") {
 
-  createCategoryFilters();
+      rules = rules.filter(function(rule) {
+        return rule.category === currentCategory;
+      });
 
+    }
+
+
+    if (!query) {
+      return rules;
+    }
+
+
+    const q = query.toLowerCase();
+
+
+    return rules.filter(function(rule) {
+
+      const searchableText = [
+
+        rule.id,
+
+        rule.title,
+
+        rule.category,
+
+        rule.section,
+
+        rule.summary,
+
+        ...(rule.keywords || []),
+
+        ...(rule.sourcePages || []).map(function(source) {
+          return source.label;
+        }),
+
+        ...(rule.sourcePages || []).map(function(source) {
+          return source.file;
+        })
+
+      ]
+      .join(" ")
+      .toLowerCase();
+
+
+      return searchableText.includes(q);
+
+    });
+
+  }
+
+
+  /*
+   * Create source links for ALL supporting PDFs.
+   */
+  function createSourceLinks(rule) {
+
+    const sourcePages = rule.sourcePages || [];
+
+    if (sourcePages.length === 0) {
+
+      return `
+        <div class="sources">
+          <div class="source-title">Source Documents</div>
+          <div style="font-size:13px;color:#6b7280;">
+            No source document linked.
+          </div>
+        </div>
+      `;
+
+    }
+
+
+    const links = sourcePages.map(function(source) {
+
+      const fileName = encodeURIComponent(source.file);
+
+      const pageNumber = Number(source.page) || 1;
+
+      const url =
+        "pdf/" +
+        fileName +
+        "#page=" +
+        pageNumber;
+
+
+      return `
+        <a
+          href="${url}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="source-link"
+        >
+          <span style="color:#2563eb;">
+            📄 ${escapeHTML(source.label)}
+          </span>
+
+          <span>
+            Page ${pageNumber} ↗
+          </span>
+        </a>
+      `;
+
+    }).join("");
+
+
+    return `
+      <div class="sources">
+
+        <div class="source-title">
+          Source Documents
+        </div>
+
+        ${links}
+
+      </div>
+    `;
+
+  }
+
+
+  /*
+   * Render rule cards.
+   */
+  function renderRules() {
+
+    const rules = getFilteredRules();
+
+
+    resultInfo.textContent =
+      rules.length +
+      (rules.length === 1 ? " rule found" : " rules found");
+
+
+    if (rules.length === 0) {
+
+      rulesContainer.innerHTML = `
+        <div class="no-results">
+          No matching rule found.
+        </div>
+      `;
+
+      return;
+    }
+
+
+    rulesContainer.innerHTML = rules.map(function(rule) {
+
+      const keywords = (rule.keywords || [])
+        .map(function(keyword) {
+          return escapeHTML(keyword);
+        })
+        .join(", ");
+
+
+      return `
+
+        <article class="rule-card">
+
+          <div class="rule-id">
+            ${escapeHTML(rule.id)}
+          </div>
+
+
+          <h2 class="rule-title">
+            ${escapeHTML(rule.title)}
+          </h2>
+
+
+          <div class="meta">
+
+            ${
+              rule.category
+                ? `<span>Category: ${escapeHTML(rule.category)}</span>`
+                : ""
+            }
+
+            ${
+              rule.section
+                ? `<span>Section: ${escapeHTML(rule.section)}</span>`
+                : ""
+            }
+
+          </div>
+
+
+          <div class="summary">
+            ${escapeHTML(rule.summary)}
+          </div>
+
+
+          ${
+            keywords
+              ? `
+                <div class="keywords">
+                  <strong>Keywords:</strong>
+                  ${keywords}
+                </div>
+              `
+              : ""
+          }
+
+
+          ${createSourceLinks(rule)}
+
+        </article>
+
+      `;
+
+    }).join("");
+
+  }
+
+
+  /*
+   * Search while typing.
+   */
+  searchInput.addEventListener("input", function() {
+    renderRules();
+  });
+
+
+  /*
+   * Initial page load.
+   */
+  renderFilters();
   renderRules();
 
 </script>
