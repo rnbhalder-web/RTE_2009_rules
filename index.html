@@ -1,10 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admission Age Rules</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RTE 2009 Rules Book</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #202124;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 24px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            margin: 0 0 6px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .search-box {
+            margin-bottom: 30px;
+        }
+
+        #search {
+            width: 100%;
+            padding: 15px 18px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #search:focus {
+            border-color: #555;
+        }
+
+        .rule-card {
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 18px;
+        }
+
+        .rule-card h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        .rule-card p {
+            margin-bottom: 10px;
+        }
+
+        .source {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .source a {
+            color: #0645ad;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .source a:hover {
+            text-decoration: underline;
+        }
+
+        .no-result {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 23px;
+            }
+
+            .container {
+                margin-top: 20px;
+            }
+
+            .rule-card {
+                padding: 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Admission Age Rules</h1>
-    <p>Rules Book coming soon.</p>
+
+<header>
+    <div class="header-inner">
+        <h1>RTE 2009 Rules Book</h1>
+        <p class="subtitle">
+            Admission rules, age requirements and original source references
+        </p>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="search"
+            placeholder="Search rules..."
+            onkeyup="searchRules()"
+        >
+    </div>
+
+
+    <!-- RULE 1 -->
+
+    <section class="rule-card">
+
+        <h2>1. Right to Education Act, 2009</h2>
+
+        <p>
+            The Right of Children to Free and Compulsory Education Act,
+            2009 provides the legal framework for free and compulsory
+            education for children within the prescribed age group.
+        </p>
+
+        <div class="source">
+            <strong>Original Source:</strong><br>
+
+            <a href="#" onclick="openPDF('rte-2009.pdf', 1)">
+                View Original Document → Page 1
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- RULE 2 -->
+
+    <section class="rule-card">
+
+        <h2>2. Admission Age Requirement</h2>
+
+        <p>
+            The applicable admission age should be determined according
+            to the relevant rule, notification or government order
+            applicable to the particular admission process.
+        </p>
+
+        <div class="source">
+            <strong>Original Source:</strong><br>
+
+            <a href="#" onclick="openPDF('rte-2009.pdf', 5)">
+                View Original Document → Page 5
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- RULE 3 -->
+
+    <section class="rule-card">
+
+        <h2>3. Important Note</h2>
+
+        <p>
+            The rules and notifications may be amended or replaced by
+            subsequent government orders. The original source document
+            should therefore always be checked for the applicable rule.
+        </p>
+
+        <div class="source">
+            <strong>Original Source:</strong><br>
+
+            <a href="#" onclick="openPDF('rte-2009.pdf', 10)">
+                View Original Document → Page 10
+            </a>
+        </div>
+
+    </section>
+
+
+    <div id="noResult" class="no-result">
+        No matching rule found.
+    </div>
+
+</main>
+
+
+<footer>
+    RTE 2009 Rules Book
+</footer>
+
+
+<script>
+
+function searchRules() {
+
+    const input = document
+        .getElementById("search")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const cards = document.querySelectorAll(".rule-card");
+
+    let found = false;
+
+    cards.forEach(function(card) {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+
+            card.style.display = "block";
+            found = true;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+    document.getElementById("noResult").style.display =
+        found ? "none" : "block";
+}
+
+
+function openPDF(file, page) {
+
+    /*
+       PDF.js viewer will be connected here later.
+
+       For now this function simply opens the PDF.
+    */
+
+    const url = "pdf/" + file + "#page=" + page;
+
+    window.open(url, "_blank");
+}
+
+</script>
+
 </body>
 </html>
