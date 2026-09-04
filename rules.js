@@ -11,7 +11,7 @@ const RTE_RULES = [
     summary: "Every child aged six to fourteen years has the right to free and compulsory education in a neighbourhood school until completion of elementary education.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 3,
         label: "RTE Act, Section 3"
       }
@@ -27,17 +27,17 @@ const RTE_RULES = [
     summary: "A child who was not admitted to school or could not complete elementary education is to be admitted to an age-appropriate class and provided special training as required.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 5,
         label: "RTE Act, Section 4"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 1,
         label: "RTE clarification"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 3,
         label: "RTE clarification"
       }
@@ -53,17 +53,17 @@ const RTE_RULES = [
     summary: "The schools covered by Section 12(1)(c) are required to admit children belonging to weaker sections and disadvantaged groups in the specified proportion.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 12"
       },
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       },
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 2,
         label: "2010 Admission Guideline"
       }
@@ -79,12 +79,12 @@ const RTE_RULES = [
     summary: "Where a school provides admission at the pre-primary or pre-school level, the Section 12(1)(c) admission requirement applies at that level as described in the admission guideline.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 12"
       },
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -100,7 +100,7 @@ const RTE_RULES = [
     summary: "No school or person is to collect capitation fee in connection with admission.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 13"
       }
@@ -116,17 +116,17 @@ const RTE_RULES = [
     summary: "No child or parent is to be subjected to a screening procedure for admission.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 13"
       },
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       },
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 2,
         label: "2010 Admission Guideline"
       }
@@ -142,7 +142,7 @@ const RTE_RULES = [
     summary: "Collection of capitation fee attracts the statutory penalty provided under the Act.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 13"
       }
@@ -158,7 +158,7 @@ const RTE_RULES = [
     summary: "Using a prohibited screening procedure for admission attracts the statutory penalty.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 8,
         label: "RTE Act, Section 13"
       }
@@ -174,12 +174,12 @@ const RTE_RULES = [
     summary: "Admission is ordinarily supported by proof of age as provided under the Act and applicable rules.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act, Section 14"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 5,
         label: "Model Rules"
       }
@@ -195,12 +195,12 @@ const RTE_RULES = [
     summary: "A child cannot be denied admission merely because the required age proof is not available.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act, Section 14"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 5,
         label: "Model Rules"
       }
@@ -216,12 +216,12 @@ const RTE_RULES = [
     summary: "Admission cannot be denied merely because it is sought at a later point during the academic year.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act, Section 15"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 5,
         label: "Model Rules"
       }
@@ -237,7 +237,7 @@ const RTE_RULES = [
     summary: "The 2024 amendment provides for a regular examination at the end of every academic year for Class V and Class VIII.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 1,
         label: "RTE Amendment Rules, 2024"
       }
@@ -253,7 +253,7 @@ const RTE_RULES = [
     summary: "A child who does not fulfil the promotion criteria must receive additional instruction and an opportunity for re-examination within two months of declaration of results.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 2,
         label: "RTE Amendment Rules, 2024"
       }
@@ -269,7 +269,7 @@ const RTE_RULES = [
     summary: "If the child again does not fulfil the notified promotion criteria in the re-examination, the child may be held back in Class V or VIII as applicable.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 2,
         label: "RTE Amendment Rules, 2024"
       }
@@ -285,12 +285,12 @@ const RTE_RULES = [
     summary: "No child may be expelled from school until completion of elementary education.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 3,
         label: "RTE Amendment Rules, 2024"
       },
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act"
       }
@@ -306,7 +306,7 @@ const RTE_RULES = [
     summary: "No child is to be subjected to physical punishment or mental harassment.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act, Section 17"
       }
@@ -322,17 +322,17 @@ const RTE_RULES = [
     summary: "Schools covered by the Act must comply with the applicable recognition requirements and prescribed norms.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 10,
         label: "RTE Act"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 6,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 7,
         label: "Model Rules"
       }
@@ -348,27 +348,27 @@ const RTE_RULES = [
     summary: "Children admitted to an age-appropriate class may receive special training to bring them to the level of their peers.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 5,
         label: "RTE Act, Section 4"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 1,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 1,
         label: "RTE clarification"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 3,
         label: "RTE clarification"
       }
@@ -384,7 +384,7 @@ const RTE_RULES = [
     summary: "The model rules provide a minimum special-training period of three months, extendable after assessment up to a maximum of two years.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules, Rule 3"
       }
@@ -400,12 +400,12 @@ const RTE_RULES = [
     summary: "Special training should use specially designed, age-appropriate learning material approved by the academic authority under Section 29(1).",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 1,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules"
       }
@@ -421,7 +421,7 @@ const RTE_RULES = [
     summary: "The model rules specify a neighbourhood school within a walking distance of 1 kilometre for Classes I-V.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules, Rule 4"
       }
@@ -437,12 +437,12 @@ const RTE_RULES = [
     summary: "The model rules specify a neighbourhood school within a walking distance of 3 kilometres for Classes VI-VIII.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules, Rule 4"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 3,
         label: "Model Rules, Rule 4"
       }
@@ -458,12 +458,12 @@ const RTE_RULES = [
     summary: "Where terrain or the approach to school creates difficulty or danger, the specified neighbourhood limits may be reduced as provided in the rules.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 2,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 3,
         label: "Model Rules"
       }
@@ -479,7 +479,7 @@ const RTE_RULES = [
     summary: "For small hamlets without a neighbourhood school, appropriate arrangements such as free transportation or residential facilities may be made.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 3,
         label: "Model Rules"
       }
@@ -495,7 +495,7 @@ const RTE_RULES = [
     summary: "The admission guideline requires a rational, reasonable, just and transparent admission process.",
     sourcePages: [
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -511,7 +511,7 @@ const RTE_RULES = [
     summary: "For the 25% admission pool, the guideline provides for random selection from the applications received from eligible children.",
     sourcePages: [
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -527,7 +527,7 @@ const RTE_RULES = [
     summary: "The admission guideline states that there shall be no testing or interviews for any child or parent for selection.",
     sourcePages: [
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -543,7 +543,7 @@ const RTE_RULES = [
     summary: "The admission policy should not profile a child based on the educational qualifications of the parents.",
     sourcePages: [
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -559,7 +559,7 @@ const RTE_RULES = [
     summary: "The school's admission policy should be placed in the public domain, given wide publicity and stated in the school prospectus.",
     sourcePages: [
       {
-        file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf",
+        file: "10_RTE_Admission_Guidelines_23-11-2010.pdf",
         page: 1,
         label: "2010 Admission Guideline"
       }
@@ -575,7 +575,7 @@ const RTE_RULES = [
     summary: "The clarification explains that documents other than a birth certificate may be accepted for determining age, subject to the applicable delegated legislation.",
     sourcePages: [
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 10,
         label: "RTE clarification"
       }
@@ -591,12 +591,12 @@ const RTE_RULES = [
     summary: "The clarification states that the right to education cannot be denied because age proof is unavailable.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 10,
         label: "RTE clarification"
       }
@@ -612,12 +612,12 @@ const RTE_RULES = [
     summary: "Admission should not be denied merely because it is sought after the beginning of the academic session.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 9,
         label: "RTE Act, Section 15"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 10,
         label: "RTE clarification"
       }
@@ -633,12 +633,12 @@ const RTE_RULES = [
     summary: "The clarification notes that children admitted after six months from the beginning of the academic session may be provided special training as determined by the Head Teacher.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 5,
         label: "Model Rules"
       },
       {
-        file: "13_RTE_Act_Clarification_on_Provisions.pdf",
+        file: "07_RTE_Act_Clarification_on_Provisions.pdf",
         page: 10,
         label: "RTE clarification"
       }
@@ -654,12 +654,12 @@ const RTE_RULES = [
     summary: "Minimum qualifications for appointment as a teacher are to be laid down by the authorised academic authority under Section 23.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 11,
         label: "RTE Act, Section 23"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 1,
         label: "8 Nov 2010 Guideline"
       }
@@ -675,17 +675,17 @@ const RTE_RULES = [
     summary: "The Central Government may relax minimum teacher qualification requirements in the circumstances specified by Section 23(2).",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 11,
         label: "RTE Act, Section 23"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 1,
         label: "8 Nov 2010 Guideline"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 2,
         label: "8 Nov 2010 Guideline"
       }
@@ -701,27 +701,27 @@ const RTE_RULES = [
     summary: "The Section 23(2) relaxation cannot exceed the period specified in the notification, which is not to exceed five years.",
     sourcePages: [
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 1,
         label: "8 Nov 2010 Guideline"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 2,
         label: "8 Nov 2010 Guideline"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 3,
         label: "8 Nov 2010 Guideline"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 4,
         label: "8 Nov 2010 Guideline"
       },
       {
-        file: "03_Guidelines_Section_23_2_08-11-2010.pdf",
+        file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf",
         page: 5,
         label: "8 Nov 2010 Guideline"
       }
@@ -737,22 +737,22 @@ const RTE_RULES = [
     summary: "The 2011 Gazette notification granted a time-limited relaxation to West Bengal subject to specified conditions, including TET-related requirements.",
     sourcePages: [
       {
-        file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
+        file: "12_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
         page: 2,
         label: "2011 Teacher Qualification Gazette"
       },
       {
-        file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
+        file: "12_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
         page: 3,
         label: "2011 Teacher Qualification Gazette"
       },
       {
-        file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
+        file: "12_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
         page: 4,
         label: "2011 Teacher Qualification Gazette"
       },
       {
-        file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
+        file: "12_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf",
         page: 5,
         label: "2011 Teacher Qualification Gazette"
       }
@@ -768,7 +768,7 @@ const RTE_RULES = [
     summary: "The 2011 KVS communication provides a defined neighbourhood radius of 5 km for metropolitan towns and district headquarters and 8 km for other Kendriya Vidyalayas.",
     sourcePages: [
       {
-        file: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf",
+        file: "14_KVS_Section_12_1_c_Guidance_02-02-2011.pdf",
         page: 1,
         label: "KVS Guidance, 2 Feb 2011"
       }
@@ -784,12 +784,12 @@ const RTE_RULES = [
     summary: "The curriculum and evaluation procedure for elementary education are to be laid down by the academic authority specified by the appropriate Government.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 13,
         label: "RTE Act, Section 29"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 1,
         label: "Section 29 Advisory"
       }
@@ -805,22 +805,22 @@ const RTE_RULES = [
     summary: "The Section 29 advisory emphasises child-centred learning through activities, discovery and exploration and other statutory principles.",
     sourcePages: [
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 1,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 2,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 3,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 4,
         label: "Section 29 Advisory"
       }
@@ -836,22 +836,22 @@ const RTE_RULES = [
     summary: "The advisory calls for age-appropriate curricula and syllabi and rationalisation of subjects and textbooks to avoid unnecessary curriculum load.",
     sourcePages: [
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 1,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 2,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 3,
         label: "Section 29 Advisory"
       },
       {
-        file: "07_Advisory_Section_29_31-01-2012.pdf",
+        file: "16_RTE_Section_29_Advisory_31-01-2012.pdf",
         page: 4,
         label: "Section 29 Advisory"
       }
@@ -867,22 +867,22 @@ const RTE_RULES = [
     summary: "Section 31 provides for monitoring and protection of children's right to education through the prescribed child-rights mechanisms.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 13,
         label: "RTE Act, Section 31"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 2,
         label: "Sections 31-32 Advisory"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 3,
         label: "Sections 31-32 Advisory"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 4,
         label: "Sections 31-32 Advisory"
       }
@@ -898,22 +898,22 @@ const RTE_RULES = [
     summary: "The Section 32 framework provides a mechanism for written complaints concerning violation of a child's right under the Act and subsequent appeal arrangements.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 13,
         label: "RTE Act, Section 32"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 2,
         label: "Sections 31-32 Advisory"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 3,
         label: "Sections 31-32 Advisory"
       },
       {
-        file: "08_Advisory_Sections_31_32_14-02-2012.pdf",
+        file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf",
         page: 4,
         label: "Sections 31-32 Advisory"
       }
@@ -929,22 +929,22 @@ const RTE_RULES = [
     summary: "The 2015 amendment inserts Rule 21A providing a grievance redressal mechanism for teachers in the schools covered by the rule.",
     sourcePages: [
       {
-        file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        file: "23_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
         page: 1,
         label: "RTE Amendment Rules, 2015"
       },
       {
-        file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        file: "23_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
         page: 2,
         label: "RTE Amendment Rules, 2015"
       },
       {
-        file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        file: "23_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
         page: 3,
         label: "RTE Amendment Rules, 2015"
       },
       {
-        file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
+        file: "23_RTE_Amendment_Rules_2015_GSR_755_E.pdf",
         page: 4,
         label: "RTE Amendment Rules, 2015"
       }
@@ -960,7 +960,7 @@ const RTE_RULES = [
     summary: "The 2024 amendment inserts Part VA concerning examination and holding back in certain cases.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 1,
         label: "RTE Amendment Rules, 2024"
       }
@@ -976,7 +976,7 @@ const RTE_RULES = [
     summary: "A regular examination is to be held at the end of every academic year in Class V and Class VIII.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 1,
         label: "RTE Amendment Rules, 2024"
       }
@@ -992,7 +992,7 @@ const RTE_RULES = [
     summary: "A child who does not meet the notified promotion criteria must be given additional instruction and an opportunity for re-examination within two months from declaration of results.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 2,
         label: "RTE Amendment Rules, 2024"
       }
@@ -1008,7 +1008,7 @@ const RTE_RULES = [
     summary: "During holding back, the class teacher should guide the child and parents and provide specialised inputs after identifying learning gaps.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 2,
         label: "RTE Amendment Rules, 2024"
       }
@@ -1024,7 +1024,7 @@ const RTE_RULES = [
     summary: "The examination and re-examination are to be competency-based and aimed at holistic development rather than memorisation and procedural skills.",
     sourcePages: [
       {
-        file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
+        file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf",
         page: 3,
         label: "RTE Amendment Rules, 2024"
       }
@@ -1040,7 +1040,7 @@ const RTE_RULES = [
     summary: "The 2012 residential-school guideline addresses the limited application of Section 12(1)(c), including its application to day scholars rather than residential boarders in the circumstances described.",
     sourcePages: [
       {
-        file: "09_Guidelines_Residential_Schools_13-07-2012.pdf",
+        file: "18_Residential_Schools_Guidelines_13-07-2012.pdf",
         page: 1,
         label: "Residential Schools Guideline"
       }
@@ -1056,7 +1056,7 @@ const RTE_RULES = [
     summary: "The 2014 clarification discusses applicability of RTE provisions to minority educational institutions in the context of Articles 29 and 30 of the Constitution.",
     sourcePages: [
       {
-        file: "10_Clarification_Minority_Institutions_27-08-2014.pdf",
+        file: "21_Minority_Institutions_RTE_Clarification_27-08-2014.pdf",
         page: 1,
         label: "Minority Institutions Clarification"
       }
@@ -1072,32 +1072,32 @@ const RTE_RULES = [
     summary: "The recognition framework includes compliance with the RTE Act and rules, prohibition of capitation and screening, prescribed school standards, records and other conditions.",
     sourcePages: [
       {
-        file: "01_RTE_Act_2009_Updated_26-07-2021.pdf",
+        file: "06_RTE_Act_2009_Updated_26-07-2021.pdf",
         page: 10,
         label: "RTE Act"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 5,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 6,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 7,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 15,
         label: "Model Rules"
       },
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 22,
         label: "Model Rules"
       }
@@ -1113,7 +1113,7 @@ const RTE_RULES = [
     summary: "The model rules provide for specified free entitlements including textbooks, writing materials and uniforms for children covered by the relevant provisions.",
     sourcePages: [
       {
-        file: "02_Model_Rules_RTE_2009.pdf",
+        file: "03_Model_Rules_RTE_2009.pdf",
         page: 3,
         label: "Model Rules"
       }
@@ -1129,10 +1129,102 @@ const RTE_RULES = [
     summary: "Searchable source-based compilation of the supplied RTE Act, rules, amendments, guidelines, advisories and clarifications.",
     sourcePages: [
       {
-        file: "00_RTE_Rules_Reference_Book_September_2026.pdf",
+        file: "01_REFERENCE_BOOK_RTE_Rules_September_2026.pdf",
         page: 1,
         label: "RTE Rules Reference Book"
       }
+    ]
+  },
+
+  {
+    id: "RTE-055",
+    title: "West Bengal class-wise age definition",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 2(c)",
+    keywords: ["West Bengal", "age", "appropriate class", "Class I", "Class II", "Class III", "Class IV", "Class V", "Class VI", "Class VII", "Class VIII", "Rule 2(c)"],
+    summary: "For the appropriate class, the West Bengal Rules define Class I as 6 years and above but below 7; Class II 7 to below 8; Class III 8 to below 9; Class IV 9 to below 10; Class V 10 to below 11; Class VI 11 to below 12; Class VII 12 to below 13; and Class VIII 13 to below 14. The rule states that this age definition applies for Class I admission on or after academic year 2013.",
+    sourcePages: [
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 1, label: "West Bengal RTE Rules 2012 • Rule 2(c)" },
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 2, label: "West Bengal RTE Rules 2012 • Rule 2(c) continuation" }
+    ]
+  },
+
+  {
+    id: "RTE-056",
+    title: "West Bengal special training procedure",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 3",
+    keywords: ["West Bengal", "special training", "age-appropriate learning material", "2 weeks", "3 months", "2 years", "Rule 3"],
+    summary: "Special training uses specially designed, age-appropriate learning material. The school identifies the need within 2 weeks of enrolment and informs the parent or guardian. Training is for a minimum of 3 months and may extend to 2 years based on periodic assessment, with progress records and reports.",
+    sourcePages: [{ file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 3, label: "West Bengal RTE Rules 2012 • Rule 3" }]
+  },
+
+  {
+    id: "RTE-057",
+    title: "West Bengal neighbourhood distance",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 4",
+    keywords: ["West Bengal", "neighbourhood", "distance", "rural", "urban", "primary", "upper primary", "transportation", "escort", "Rule 4"],
+    summary: "For Classes I-IV, the neighbourhood limit is 1 km in rural areas and 0.5 km in urban areas. For Classes V-VIII, it is 2 km in rural areas and 1 km in urban areas. Difficult terrain or hazards may justify reduced limits and arrangements for transportation, escort or residential accommodation.",
+    sourcePages: [
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 3, label: "West Bengal RTE Rules 2012 • Rule 4" },
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 4, label: "West Bengal RTE Rules 2012 • Rule 4 continuation" }
+    ]
+  },
+
+  {
+    id: "RTE-058",
+    title: "West Bengal child register and school mapping",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 5",
+    keywords: ["West Bengal", "child register", "birth", "age 14", "school mapping", "neighbourhood school", "Rule 5"],
+    summary: "The rules provide for a local-authority register of children from birth until age 14, updated annually, and describe its use for monitoring admission, attendance and completion of elementary education, along with school mapping.",
+    sourcePages: [{ file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 4, label: "West Bengal RTE Rules 2012 • Rule 5" }]
+  },
+
+  {
+    id: "RTE-059",
+    title: "West Bengal age proof documents",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 7",
+    keywords: ["West Bengal", "age proof", "birth certificate", "hospital record", "ICDS", "Anganwadi", "medical practitioner", "parent declaration", "Rule 7"],
+    summary: "The West Bengal Rules specify acceptable age-related records including hospital or sub-centre records, ICDS-related certification and a certificate from a registered medical practitioner; where the specified records are unavailable, a parent or guardian written declaration may be used.",
+    sourcePages: [{ file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 5, label: "West Bengal RTE Rules 2012 • Rule 7" }]
+  },
+
+  {
+    id: "RTE-060",
+    title: "West Bengal admission period and out-of-school children",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 8",
+    keywords: ["West Bengal", "admission period", "out-of-school child", "late admission", "3 months", "Rule 8"],
+    summary: "The West Bengal Rules provide an extended admission period of three months from the beginning of the academic year and state that an out-of-school child found at any point should not be denied admission merely because the normal admission period has ended.",
+    sourcePages: [{ file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 5, label: "West Bengal RTE Rules 2012 • Rule 8" }]
+  },
+
+  {
+    id: "RTE-061",
+    title: "West Bengal school recognition procedure",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 10",
+    keywords: ["West Bengal", "recognition", "school recognition", "District Inspector", "inspection", "No Objection Certificate", "Rule 10"],
+    summary: "Rule 10 sets out the application, hearing, inspection and recognition procedure for schools covered by the West Bengal Rules, including the role of the District Inspector of Schools and the prescribed recognition process.",
+    sourcePages: [
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 6, label: "West Bengal RTE Rules 2012 • Rule 10 begins" },
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 9, label: "West Bengal RTE Rules 2012 • Rule 10 conditions" }
+    ]
+  },
+
+  {
+    id: "RTE-062",
+    title: "West Bengal recognition conditions and published school information",
+    category: "West Bengal Specific",
+    section: "West Bengal RTE Rules 2012, Rule 10(15) and 10(19)",
+    keywords: ["West Bengal", "recognition conditions", "school notice board", "students", "teachers", "curricular activities", "facilities", "SMC", "neighbourhood", "Board", "Rule 10(15)", "Rule 10(19)"],
+    summary: "The rules prescribe conditions for recognition and require recognised schools to display specified information, including student and teacher numbers, curricular activities, facilities, School Managing Committee composition, neighbourhood and affiliated Board information.",
+    sourcePages: [
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 9, label: "West Bengal RTE Rules 2012 • Rule 10(15)" },
+      { file: "14_West_Bengal_RTE_Rules_2012.pdf", page: 10, label: "West Bengal RTE Rules 2012 • Rule 10(19)" }
     ]
   }
 
@@ -1151,7 +1243,7 @@ const SOURCE_DOCUMENTS = [
     description: "Principal Act",
     date: "Updated 26-07-2021",
     pages: 17,
-    file: "01_RTE_Act_2009_Updated_26-07-2021.pdf"
+    file: "06_RTE_Act_2009_Updated_26-07-2021.pdf"
   },
 
   {
@@ -1160,7 +1252,7 @@ const SOURCE_DOCUMENTS = [
     description: "Model Rules",
     date: "",
     pages: 22,
-    file: "02_Model_Rules_RTE_2009.pdf"
+    file: "03_Model_Rules_RTE_2009.pdf"
   },
 
   {
@@ -1169,7 +1261,7 @@ const SOURCE_DOCUMENTS = [
     description: "Teacher qualification / relaxation",
     date: "8 Nov 2010",
     pages: 5,
-    file: "03_Guidelines_Section_23_2_08-11-2010.pdf"
+    file: "09_RTE_Section_23_2_Guidelines_08-11-2010.pdf"
   },
 
   {
@@ -1178,7 +1270,7 @@ const SOURCE_DOCUMENTS = [
     description: "Admission / screening / 25%",
     date: "23 Nov 2010",
     pages: 2,
-    file: "04_Guidelines_Admission_Section_13_12_1_c_23-11-2010.pdf"
+    file: "10_RTE_Admission_Guidelines_23-11-2010.pdf"
   },
 
   {
@@ -1187,7 +1279,7 @@ const SOURCE_DOCUMENTS = [
     description: "West Bengal and Bihar relaxation",
     date: "10 Jun 2011",
     pages: 5,
-    file: "05_Gazette_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf"
+    file: "12_Teacher_Qualification_Relaxation_WB_Bihar_10-06-2011.pdf"
   },
 
   {
@@ -1196,7 +1288,7 @@ const SOURCE_DOCUMENTS = [
     description: "KVS neighbourhood",
     date: "2 Feb 2011",
     pages: 1,
-    file: "06_KVS_Guidance_Section_12_1_c_02-02-2011.pdf"
+    file: "14_KVS_Section_12_1_c_Guidance_02-02-2011.pdf"
   },
 
   {
@@ -1205,7 +1297,7 @@ const SOURCE_DOCUMENTS = [
     description: "Curriculum / evaluation",
     date: "31 Jan 2012",
     pages: 4,
-    file: "07_Advisory_Section_29_31-01-2012.pdf"
+    file: "16_RTE_Section_29_Advisory_31-01-2012.pdf"
   },
 
   {
@@ -1214,7 +1306,7 @@ const SOURCE_DOCUMENTS = [
     description: "Child-rights monitoring / grievances",
     date: "14 Feb 2012",
     pages: 4,
-    file: "08_Advisory_Sections_31_32_14-02-2012.pdf"
+    file: "17_RTE_Sections_31_32_Advisory_14-02-2012.pdf"
   },
 
   {
@@ -1223,7 +1315,7 @@ const SOURCE_DOCUMENTS = [
     description: "Residential schools",
     date: "13 Jul 2012",
     pages: 1,
-    file: "09_Guidelines_Residential_Schools_13-07-2012.pdf"
+    file: "18_Residential_Schools_Guidelines_13-07-2012.pdf"
   },
 
   {
@@ -1232,7 +1324,7 @@ const SOURCE_DOCUMENTS = [
     description: "Minority institutions",
     date: "27 Aug 2014",
     pages: 1,
-    file: "10_Clarification_Minority_Institutions_27-08-2014.pdf"
+    file: "21_Minority_Institutions_RTE_Clarification_27-08-2014.pdf"
   },
 
   {
@@ -1241,7 +1333,7 @@ const SOURCE_DOCUMENTS = [
     description: "Teacher grievance mechanism",
     date: "2015",
     pages: 4,
-    file: "11_RTE_Amendment_Rules_2015_GSR_755_E.pdf"
+    file: "23_RTE_Amendment_Rules_2015_GSR_755_E.pdf"
   },
 
   {
@@ -1250,7 +1342,7 @@ const SOURCE_DOCUMENTS = [
     description: "Examination / holding back",
     date: "2024",
     pages: 3,
-    file: "12_RTE_Amendment_Rules_2024_GSR_777_E.pdf"
+    file: "41_RTE_Amendment_Rules_2024_GSR_777_E.pdf"
   },
 
   {
@@ -1259,7 +1351,7 @@ const SOURCE_DOCUMENTS = [
     description: "Age-appropriate admission / special training clarification",
     date: "2009",
     pages: 17,
-    file: "13_RTE_Act_Clarification_on_Provisions.pdf"
+    file: "07_RTE_Act_Clarification_on_Provisions.pdf"
   },
 
   {
@@ -1268,7 +1360,16 @@ const SOURCE_DOCUMENTS = [
     description: "Searchable, topic-indexed, source-linked compilation",
     date: "September 2026",
     pages: 0,
-    file: "00_RTE_Rules_Reference_Book_September_2026.pdf"
+    file: "01_REFERENCE_BOOK_RTE_Rules_September_2026.pdf"
+  },
+
+  {
+    id: "SOURCE-WB-2012",
+    title: "West Bengal Right of Children to Free and Compulsory Education Rules, 2012",
+    description: "Government of West Bengal, School Education Department, Law Branch. No. 323-SE(Law)/ES/S/1A-01/2009, dated 15 March 2012.",
+    date: "15 March 2012",
+    pages: 36,
+    file: "14_West_Bengal_RTE_Rules_2012.pdf"
   }
 
 ];
